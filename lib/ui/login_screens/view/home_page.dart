@@ -25,8 +25,37 @@ class HomePage extends StatelessWidget {
                   if (state is ItemLoaded) {
                     return ListView.builder(
                       itemCount: state.items.length,
-                      itemBuilder: (context, index) =>
-                          ItemTile(item: state.items[index]),
+                      itemBuilder: (context, index) {
+                        final item = state.items[index];
+
+                        final isSynced = item.id.contains('remote');
+                        // tạm phân loại trạng thái (bạn có thể thay bằng flag trong DB)
+
+                        return TweenAnimationBuilder<double>(
+                          tween: Tween(begin: 0, end: 1),
+                          duration: Duration(milliseconds: 300 + (index * 80)),
+                          builder: (context, value, child) {
+                            return Transform.scale(
+                              scale: value,
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                                child: ItemTile(
+                                  item: item,
+                                  isSynced: isSynced,
+                                  onEdit: () {
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(content: Text('Edit ${item.title}')),
+                                    );
+                                  },
+                                  onDelete: () {
+                                  },
+                                ),
+                              ),
+                            );
+                          },
+                        );
+                      },
+
                     );
                   }
                   if (state is ItemError) {
