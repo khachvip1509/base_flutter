@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:untitled/ui/loginscreens/bloc/item_bloc.dart';
-import 'package:untitled/ui/loginscreens/view/home_page.dart';
+import 'package:untitled/ui/login_screens/bloc/item_bloc.dart';
+import 'package:untitled/ui/login_screens/view/home_page.dart';
 
 import 'data/model/item_model.g.dart';
 import 'di/locator.dart' as di;
