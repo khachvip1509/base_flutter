@@ -12,7 +12,7 @@ void main() async {
   await Hive.initFlutter();
   Hive.registerAdapter(ItemModelAdapter());
   await di.init();
-  runApp(BlocProvider(create: (_) => ItemBloc(), child: const MyApp()));
+  runApp(BlocProvider(create: (_) => ItemBloc()..add(LoadRemoteItemsEvent()), child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {

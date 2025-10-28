@@ -67,17 +67,17 @@ class ItemTile extends StatelessWidget {
                 ),
               ),
 
-              // // Action Icons
-              // IconButton(
-              //   icon: const Icon(Icons.edit),
-              //   color: Colors.blueGrey,
-              //   onPressed: onEdit,
-              // ),
-              // IconButton(
-              //   icon: const Icon(Icons.delete),
-              //   color: Colors.redAccent,
-              //   onPressed: onDelete,
-              // ),
+              // Action Icons
+              IconButton(
+                icon: const Icon(Icons.edit),
+                color: Colors.blueGrey,
+                onPressed: onEdit,
+              ),
+              IconButton(
+                icon: const Icon(Icons.delete),
+                color: Colors.redAccent,
+                onPressed: onDelete,
+              ),
             ],
           ),
         ),

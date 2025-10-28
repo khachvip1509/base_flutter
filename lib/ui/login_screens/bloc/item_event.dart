@@ -9,3 +9,8 @@ class AddLocalItemEvent extends ItemEvent {
 
   AddLocalItemEvent(this.item);
 }
+
+class DeleteLocalItemEvent extends ItemEvent {
+  final Item item;
+  DeleteLocalItemEvent(this.item);
+}

@@ -1,5 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
+import 'package:untitled/domain/usecase/delete_item_usecase.dart';
+import 'package:untitled/domain/usecase/update_list_item_usecase.dart';
 
 import '../data/local/dao/item_local_datasource.dart';
 import '../data/remote/api/api_service.dart';
@@ -28,4 +30,6 @@ Future<void> init() async {
   // Use cases
   locator.registerLazySingleton(() => GetItemsUseCase(locator()));
   locator.registerLazySingleton(() => AddItemUseCase(locator()));
+  locator.registerLazySingleton(() => DeleteItemUseCase(locator()));
+  locator.registerLazySingleton(() => UpdateListItemUseCase(locator()));
 }

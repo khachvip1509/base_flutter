@@ -1,12 +1,12 @@
 import '../model/item.dart';
 import '../repository/item_repository.dart';
 
-class GetItemsUseCase {
+class UpdateListItemUseCase  {
   final ItemRepository repository;
 
-  GetItemsUseCase(this.repository);
+  UpdateListItemUseCase(this.repository);
 
   Future<List<Item>> call() async {
-    return await repository.getItems();
+    return await repository.getLocalItems();
   }
 }

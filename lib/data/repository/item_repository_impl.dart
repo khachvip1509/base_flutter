@@ -25,11 +25,33 @@ class ItemRepositoryImpl implements ItemRepository {
   @override
   Future<List<Item>> getLocalItems() async {
     final models = await localDataSource.getAllItems();
+    print("Anhnt471: getLocalItems");
+    print("Anhnt471 : size: " + models.length.toString() +", data:"+ models.toString());
     return models.map((m) => Item(id: m.id, title: m.title)).toList();
   }
 
   @override
   Future<void> deleteLocalItem(String id) async {
+    print("Anhnt471 : delete:"+ id);
     await localDataSource.deleteItem(id);
   }
+
+  @override
+  Future<List<Item>> getItems() async {
+    //get local first
+    final localItems = await localDataSource.getAllItems();
+
+    if (localItems.isNotEmpty) {
+      print("Anhnt471: Data local not empty");
+      print("Anhnt471 : size: " + localItems.length.toString() +", data:"+ localItems.toString());
+      return localItems.map((m) => Item(id: m.id, title: m.title)).toList();
+    }
+
+    // Local rỗng -> gọi remote
+    print("Anhnt471: Data local empty");
+    final remoteItems = await apiService.fetchItems();
+    await localDataSource.saveItems(remoteItems);
+    return remoteItems.map((m) => Item(id: m.id, title: m.title)).toList();
+  }
+
 }
