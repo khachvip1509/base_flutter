@@ -1,7 +1,7 @@
 import '../model/item.dart';
 import '../repository/item_repository.dart';
 
-class UpdateListItemUseCase  {
+class UpdateListItemUseCase {
   final ItemRepository repository;
 
   UpdateListItemUseCase(this.repository);

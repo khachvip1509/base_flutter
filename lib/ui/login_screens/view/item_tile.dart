@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../../domain/model/item.dart';
 
 class ItemTile extends StatelessWidget {
@@ -28,16 +29,16 @@ class ItemTile extends StatelessWidget {
             color: Colors.black.withOpacity(0.1),
             offset: const Offset(0, 3),
             blurRadius: 6,
-          )
+          ),
         ],
       ),
       child: InkWell(
         borderRadius: BorderRadius.circular(12),
         splashColor: Colors.blue.withOpacity(0.3),
         onTap: () {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text("Tap on ${item.title}")),
-          );
+          ScaffoldMessenger.of(
+            context,
+          ).showSnackBar(SnackBar(content: Text("Tap on ${item.title}")));
         },
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 16),

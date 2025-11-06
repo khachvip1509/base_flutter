@@ -8,14 +8,14 @@ import '../../../domain/usecase/add_item_usecase.dart';
 import '../../../domain/usecase/get_items_usecase.dart';
 
 part 'item_event.dart';
-
 part 'item_state.dart';
 
 class ItemBloc extends Bloc<ItemEvent, ItemState> {
   final GetItemsUseCase getItemsUseCase = locator<GetItemsUseCase>();
   final AddItemUseCase addItemUseCase = locator<AddItemUseCase>();
   final DeleteItemUseCase deleteLocalItemUseCase = locator<DeleteItemUseCase>();
-  final UpdateListItemUseCase updateListItemUseCase = locator<UpdateListItemUseCase>();
+  final UpdateListItemUseCase updateListItemUseCase =
+      locator<UpdateListItemUseCase>();
 
   ItemBloc() : super(ItemInitial()) {
     on<LoadRemoteItemsEvent>((event, emit) async {
@@ -42,6 +42,5 @@ class ItemBloc extends Bloc<ItemEvent, ItemState> {
         emit(ItemError('Delete failed $e'));
       }
     });
-
   }
 }

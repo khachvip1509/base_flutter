@@ -25,7 +25,12 @@ class ApiService {
       if (response.statusCode == 200) {
         final data = response.data as List;
         return data
-            .map((json) => ItemModel(id: json["id"].toString(), title: json["title"].toString()))
+            .map(
+              (json) => ItemModel(
+                id: json["id"].toString(),
+                title: json["title"].toString(),
+              ),
+            )
             .toList();
       } else {
         throw Exception("Server error: ${response.statusCode}");

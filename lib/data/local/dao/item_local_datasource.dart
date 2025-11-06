@@ -1,6 +1,5 @@
 import 'package:hive/hive.dart';
 
-import '../../../domain/model/item.dart';
 import '../../model/item_model.dart';
 
 class ItemLocalDataSource {
@@ -20,7 +19,7 @@ class ItemLocalDataSource {
   Future<void> deleteItem(String id) async {
     final box = await Hive.openBox<ItemModel>(boxName);
     final key = box.keys.firstWhere(
-          (k) => box.get(k)?.id == id,
+      (k) => box.get(k)?.id == id,
       orElse: () => null,
     );
     if (key != null) {
