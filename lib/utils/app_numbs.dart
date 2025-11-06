@@ -2,6 +2,7 @@ part of app_constants;
 
 class AppNumbs {
   static const sizeAvt = 50.0;
+  static const sizePageView = 600.0;
 
   static const borderRadius = 20.0;
   static const spacing = 20.0;

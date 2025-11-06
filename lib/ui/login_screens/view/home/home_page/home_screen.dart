@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/utils/app_constants.dart';
+import 'package:untitled/utils/carousel_view_custom/hero_layout_card.dart';
+import 'package:untitled/utils/carousel_view_custom/normal_layout_card.dart';
+import 'package:untitled/utils/carousel_view_custom/uncontained_layout_card.dart';
 
 class ExampleDestination {
   const ExampleDestination(this.label, this.icon, this.selectedIcon);
@@ -66,8 +70,19 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample> {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[Text('Page Index = $screenIndex')],
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            SizedBox(
+              height: MediaQuery.sizeOf(context).height,
+              child: ListView(
+                children: [
+                  HeroLayoutCard(),
+                  const SizedBox(height: 20),
+                  NormalLayoutCard(),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
       bottomNavigationBar: NavigationBar(
@@ -121,15 +136,27 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample> {
             ),
             const VerticalDivider(thickness: 1, width: 1),
             Expanded(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Text('Page Index = $screenIndex'),
-                  ElevatedButton(
-                    onPressed: openDrawer,
-                    child: const Text('Open Drawer'),
-                  ),
-                ],
+              child: Padding(
+                padding: EdgeInsets.only(top: AppNumbs.doublePadding),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    SizedBox(
+                      height: AppNumbs.sizePageView,
+                      child: ListView(
+                        children: [
+                          HeroLayoutCard(),
+                          const SizedBox(height: 20),
+                          NormalLayoutCard(),
+                        ],
+                      ),
+                    ),
+                    // ElevatedButton(
+                    //   onPressed: openDrawer,
+                    //   child: const Text('Open Drawer'),
+                    // ),
+                  ],
+                ),
               ),
             ),
           ],

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:untitled/ui/login_screens/bloc/item_bloc.dart';
-import 'package:untitled/ui/login_screens/view/home/home_screen.dart';
+import 'package:untitled/ui/login_screens/view/home/home_page/home_screen.dart';
 import 'package:untitled/utils/app_constants.dart';
 
 import 'data/model/item_model.g.dart';
