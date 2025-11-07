@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:untitled/ui/login_screens/bloc/item_bloc.dart';
+import 'package:untitled/ui/login_screens/view/home/appbar/app_bar.dart';
 import 'package:untitled/ui/login_screens/view/home/home_page/home_screen.dart';
 import 'package:untitled/utils/app_constants.dart';
 
@@ -16,14 +17,16 @@ void main() async {
   runApp(
     BlocProvider(
       create: (_) => ItemBloc()..add(LoadRemoteItemsEvent()),
-      child: const MyApp(),
+      child: MyApp(),
     ),
   );
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
 
+  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
+  final List<String> items = ['Trang chủ', 'Học chữ', 'Cài đặt'];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -33,24 +36,49 @@ class MyApp extends StatelessWidget {
       ),
       home: Builder(
         builder: (context) => Scaffold(
+          key: scaffoldKey,
           appBar: AppBar(
+            leading: const ProRealMenu(),
+            centerTitle: true,
             title: Text(AppStrings.appName, style: AppTextStyle.s23w500cWhite),
             backgroundColor: Colors.blue,
             actions: [
               IconButton(
-                onPressed: () {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text("Information person")),
-                  );
-                },
-                icon: const Icon(Icons.person, size: AppNumbs.sizeAvt),
+                onPressed: openDrawer,
+                icon: const Icon(Icons.person, size: AppNumbs.sizeAvt, color: Colors.white),
                 tooltip: "Guess",
               ),
             ],
           ),
           body: HomeScreen(),
+          endDrawer: NavigationDrawer(
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.fromLTRB(28, 16, 16, 10),
+                child: Text(
+                  'Header',
+                  style: Theme.of(context).textTheme.titleSmall,
+                ),
+              ),
+              ...destinations.map((ExampleDestination destination) {
+                return NavigationDrawerDestination(
+                  label: Text(destination.label),
+                  icon: destination.icon,
+                  selectedIcon: destination.selectedIcon,
+                );
+              }),
+              const Padding(
+                padding: EdgeInsets.fromLTRB(28, 16, 28, 10),
+                child: Divider(),
+              ),
+            ],
+          ),
         ),
       ),
     );
+  }
+
+  void openDrawer() {
+    scaffoldKey.currentState!.openEndDrawer();
   }
 }

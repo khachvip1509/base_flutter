@@ -7,5 +7,5 @@ class AppStrings {
   static const apiKeyIos = "apiKeyIos";
   static const apiKeyAndroid = "apiKeyAndroid";
 
-  static const appName = "Japanese for newbie";
+  static const appName = "Nihongo";
 }

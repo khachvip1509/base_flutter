@@ -50,11 +50,69 @@ class NavigationDrawerExample extends StatefulWidget {
       _NavigationDrawerExampleState();
 }
 
-class _NavigationDrawerExampleState extends State<NavigationDrawerExample> {
-  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
+class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
+    with SingleTickerProviderStateMixin {
 
+  late TabController _tabController;
   int screenIndex = 0;
   late bool showNavigationDrawer;
+
+  static List<Widget> get _pages => [
+    SafeArea(
+      bottom: false,
+      top: false,
+      child: Row(
+        children: <Widget>[
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.only(top: AppNumbs.doublePadding),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  SizedBox(
+                    height: AppNumbs.sizePageView,
+                    child: ListView(
+                      children: [
+                        HeroLayoutCard(),
+                        const SizedBox(height: 20),
+                        NormalLayoutCard(),
+                      ],
+                    ),
+                  ),
+                  // ElevatedButton(
+                  //   onPressed: openDrawer,
+                  //   child: const Text('Open Drawer'),
+                  // ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    ),
+    const Center(child: Text("Học chữ")),
+    const Center(child: Text("Cài đặt")),
+  ];
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(length: _pages.length, vsync: this);
+    _tabController.addListener(() {
+      // Khi vuốt thì bottom nav tự đổi index
+      if (!_tabController.indexIsChanging) {
+        setState(() {});
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
+  }
+
+
 
   void handleScreenChanged(int selectedScreen) {
     setState(() {
@@ -62,127 +120,55 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample> {
     });
   }
 
-  void openDrawer() {
-    scaffoldKey.currentState!.openEndDrawer();
-  }
-
   Widget buildBottomBarScaffold() {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-            SizedBox(
-              height: MediaQuery.sizeOf(context).height,
-              child: ListView(
-                children: [
-                  HeroLayoutCard(),
-                  const SizedBox(height: 20),
-                  NormalLayoutCard(),
-                ],
-              ),
-            ),
-          ],
-        ),
+      body: TabBarView(
+        controller: _tabController,
+        children: _pages,
       ),
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: screenIndex,
-        onDestinationSelected: (int index) {
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _tabController.index,
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: AppColors.blue6187E8,
+        unselectedItemColor: Colors.grey,
+        onTap: (int index) {
           setState(() {
-            screenIndex = index;
+            _tabController.index = index;
           });
         },
-        destinations: destinations.map((ExampleDestination destination) {
-          return NavigationDestination(
-            label: destination.label,
-            icon: destination.icon,
-            selectedIcon: destination.selectedIcon,
-            tooltip: destination.label,
-          );
-        }).toList(),
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.book), label: "Learn"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.settings), label: "Settings"),
+        ],
       ),
     );
   }
 
   Widget buildDrawerScaffold(BuildContext context) {
     return Scaffold(
-      key: scaffoldKey,
-      body: SafeArea(
-        bottom: false,
-        top: false,
-        child: Row(
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5),
-              child: NavigationRail(
-                minWidth: 50,
-                destinations: destinations.map((
-                  ExampleDestination destination,
-                ) {
-                  return NavigationRailDestination(
-                    label: Text(destination.label),
-                    icon: destination.icon,
-                    selectedIcon: destination.selectedIcon,
-                  );
-                }).toList(),
-                selectedIndex: screenIndex,
-                useIndicator: true,
-                onDestinationSelected: (int index) {
-                  setState(() {
-                    screenIndex = index;
-                  });
-                },
-              ),
-            ),
-            const VerticalDivider(thickness: 1, width: 1),
-            Expanded(
-              child: Padding(
-                padding: EdgeInsets.only(top: AppNumbs.doublePadding),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: <Widget>[
-                    SizedBox(
-                      height: AppNumbs.sizePageView,
-                      child: ListView(
-                        children: [
-                          HeroLayoutCard(),
-                          const SizedBox(height: 20),
-                          NormalLayoutCard(),
-                        ],
-                      ),
-                    ),
-                    // ElevatedButton(
-                    //   onPressed: openDrawer,
-                    //   child: const Text('Open Drawer'),
-                    // ),
-                  ],
-                ),
-              ),
-            ),
-          ],
-        ),
+      body: TabBarView(
+        controller: _tabController,
+        children: _pages,
       ),
-      endDrawer: NavigationDrawer(
-        onDestinationSelected: handleScreenChanged,
-        selectedIndex: screenIndex,
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.fromLTRB(28, 16, 16, 10),
-            child: Text(
-              'Header',
-              style: Theme.of(context).textTheme.titleSmall,
-            ),
-          ),
-          ...destinations.map((ExampleDestination destination) {
-            return NavigationDrawerDestination(
-              label: Text(destination.label),
-              icon: destination.icon,
-              selectedIcon: destination.selectedIcon,
-            );
-          }),
-          const Padding(
-            padding: EdgeInsets.fromLTRB(28, 16, 28, 10),
-            child: Divider(),
+
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _tabController.index,
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: AppColors.blue6187E8,
+        unselectedItemColor: Colors.grey,
+        onTap: (index) {
+          setState(() {
+            _tabController.index = index;
+          });
+        },
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.book), label: "Learn"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: "Settings",
           ),
         ],
       ),
