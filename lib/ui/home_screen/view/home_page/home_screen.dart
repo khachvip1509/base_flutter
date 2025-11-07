@@ -4,6 +4,8 @@ import 'package:untitled/utils/carousel_view_custom/hero_layout_card.dart';
 import 'package:untitled/utils/carousel_view_custom/normal_layout_card.dart';
 import 'package:untitled/utils/carousel_view_custom/uncontained_layout_card.dart';
 
+import 'introduce.dart';
+
 class ExampleDestination {
   const ExampleDestination(this.label, this.icon, this.selectedIcon);
 
@@ -52,7 +54,6 @@ class NavigationDrawerExample extends StatefulWidget {
 
 class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
     with SingleTickerProviderStateMixin {
-
   late TabController _tabController;
   int screenIndex = 0;
   late bool showNavigationDrawer;
@@ -69,20 +70,17 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
-                  SizedBox(
-                    height: AppNumbs.sizePageView,
+                  Expanded(
                     child: ListView(
                       children: [
                         HeroLayoutCard(),
+                        const SizedBox(height: 20),
+                        Introduce(),
                         const SizedBox(height: 20),
                         NormalLayoutCard(),
                       ],
                     ),
                   ),
-                  // ElevatedButton(
-                  //   onPressed: openDrawer,
-                  //   child: const Text('Open Drawer'),
-                  // ),
                 ],
               ),
             ),
@@ -90,8 +88,10 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
         ],
       ),
     ),
-    const Center(child: Text("Học chữ")),
-    const Center(child: Text("Cài đặt")),
+    const Center(child: Text(AppStrings.loTrinh)),
+    const Center(child: Text(AppStrings.thi)),
+    const Center(child: Text(AppStrings.nangCap)),
+    const Center(child: Text(AppStrings.caiDat)),
   ];
 
   @override
@@ -112,8 +112,6 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
     super.dispose();
   }
 
-
-
   void handleScreenChanged(int selectedScreen) {
     setState(() {
       screenIndex = selectedScreen;
@@ -122,10 +120,7 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
 
   Widget buildBottomBarScaffold() {
     return Scaffold(
-      body: TabBarView(
-        controller: _tabController,
-        children: _pages,
-      ),
+      body: TabBarView(controller: _tabController, children: _pages),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _tabController.index,
         type: BottomNavigationBarType.fixed,
@@ -137,10 +132,26 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
           });
         },
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.book), label: "Learn"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.settings), label: "Settings"),
+            icon: Icon(Icons.home),
+            label: AppStrings.luyenTap,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.rocket),
+            label: AppStrings.loTrinh,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.star),
+            label: AppStrings.thi,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.diamond),
+            label: AppStrings.nangCap,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: AppStrings.caiDat,
+          ),
         ],
       ),
     );
@@ -148,10 +159,7 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
 
   Widget buildDrawerScaffold(BuildContext context) {
     return Scaffold(
-      body: TabBarView(
-        controller: _tabController,
-        children: _pages,
-      ),
+      body: TabBarView(controller: _tabController, children: _pages),
 
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _tabController.index,
@@ -164,11 +172,25 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
           });
         },
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.book), label: "Learn"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: AppStrings.luyenTap,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.rocket),
+            label: AppStrings.loTrinh,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.star),
+            label: AppStrings.thi,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.diamond),
+            label: AppStrings.nangCap,
+          ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
-            label: "Settings",
+            label: AppStrings.caiDat,
           ),
         ],
       ),

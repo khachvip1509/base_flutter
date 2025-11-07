@@ -8,4 +8,15 @@ class AppStrings {
   static const apiKeyAndroid = "apiKeyAndroid";
 
   static const appName = "Nihongo";
+
+  static const menu = "Menu";
+  static const luyenTap = "Luyện tập";
+  static const loTrinh = "Lộ trình";
+  static const thi = "Thi";
+  static const nangCap = "Nâng cấp";
+  static const caiDat = "Cài đặt";
+
+  //home
+  static const gioiThieuChung = "Giới thiệu chung";
+
 }

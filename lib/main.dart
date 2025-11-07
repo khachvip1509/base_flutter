@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:untitled/ui/home_screen/view/app_bar/app_bar.dart';
+import 'package:untitled/ui/home_screen/view/home_page/home_screen.dart';
 import 'package:untitled/ui/login_screens/bloc/item_bloc.dart';
-import 'package:untitled/ui/login_screens/view/home/appbar/app_bar.dart';
-import 'package:untitled/ui/login_screens/view/home/home_page/home_screen.dart';
 import 'package:untitled/utils/app_constants.dart';
 
 import 'data/model/item_model.g.dart';
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
         builder: (context) => Scaffold(
           key: scaffoldKey,
           appBar: AppBar(
-            leading: const ProRealMenu(),
+            leading: const MenuLeading(),
             centerTitle: true,
             title: Text(AppStrings.appName, style: AppTextStyle.s23w500cWhite),
             backgroundColor: Colors.blue,

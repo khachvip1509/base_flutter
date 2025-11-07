@@ -3,22 +3,24 @@ import 'package:flutter/material.dart';
 
 import '../../../../../utils/app_constants.dart';
 
-class ProRealMenu extends StatefulWidget {
-  const ProRealMenu({super.key});
+class MenuLeading extends StatefulWidget {
+  const MenuLeading({super.key});
 
   @override
-  State<ProRealMenu> createState() => _ProRealMenuState();
+  State<MenuLeading> createState() => _MenuLeadingState();
 }
 
-class _ProRealMenuState extends State<ProRealMenu>
+class _MenuLeadingState extends State<MenuLeading>
     with SingleTickerProviderStateMixin {
   OverlayEntry? _overlay;
   late AnimationController _controller;
 
   final items = const [
-    {'label': 'Trang chủ', 'icon': Icons.home},
-    {'label': 'Học chữ', 'icon': Icons.book},
-    {'label': 'Cài đặt', 'icon': Icons.settings},
+    {'label': AppStrings.luyenTap, 'icon': Icons.home},
+    {'label': AppStrings.loTrinh, 'icon': Icons.rocket},
+    {'label': AppStrings.thi, 'icon': Icons.star},
+    {'label': AppStrings.nangCap, 'icon': Icons.diamond},
+    {'label': AppStrings.luyenTap, 'icon': Icons.settings},
   ];
 
   @override
@@ -157,7 +159,7 @@ class AnimatedIconButton extends StatelessWidget {
         color: Colors.white,
         size: AppNumbs.sizeAvt,
       ),
-      tooltip: 'Menu',
+      tooltip: AppStrings.menu,
       onPressed: onPressed,
     );
   }
