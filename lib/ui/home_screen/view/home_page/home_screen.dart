@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:untitled/utils/app_constants.dart';
 import 'package:untitled/utils/carousel_view_custom/hero_layout_card.dart';
 import 'package:untitled/utils/carousel_view_custom/normal_layout_card.dart';
-import 'package:untitled/utils/carousel_view_custom/uncontained_layout_card.dart';
 
 import 'introduce.dart';
 

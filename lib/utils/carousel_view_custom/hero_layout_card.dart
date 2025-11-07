@@ -10,7 +10,7 @@ class HeroLayoutCard extends StatelessWidget {
     final double width = MediaQuery.sizeOf(context).width;
     final double height = MediaQuery.sizeOf(context).height;
     return  ConstrainedBox(
-      constraints: BoxConstraints(maxHeight: height / 5),
+      constraints: BoxConstraints(maxHeight: height / 6),
       child: CarouselView.weighted(
         controller: controller,
         itemSnapping: true,

@@ -11,7 +11,7 @@ class NormalLayoutCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final double height = MediaQuery.sizeOf(context).height;
     return ConstrainedBox(
-      constraints: BoxConstraints(maxHeight: height / 5),
+      constraints: BoxConstraints(maxHeight: height / 8),
       child: CarouselView.weighted(
         flexWeights: const <int>[3, 3, 3, 2, 1],
         consumeMaxWeight: false,

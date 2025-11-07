@@ -8,7 +8,8 @@ class SettingsScreen extends StatefulWidget {
   State<SettingsScreen> createState() => _SettingsScreen();
 }
 
-class _SettingsScreen extends State<SettingsScreen> with TickerProviderStateMixin {
+class _SettingsScreen extends State<SettingsScreen>
+    with TickerProviderStateMixin {
   late PageController _pageViewController;
   late TabController _tabController;
   int _currentPageIndex = 0;
@@ -76,10 +77,14 @@ class _SettingsScreen extends State<SettingsScreen> with TickerProviderStateMixi
 
   bool get _isOnDesktopAndWeb =>
       kIsWeb ||
-          switch (defaultTargetPlatform) {
-            TargetPlatform.macOS || TargetPlatform.linux || TargetPlatform.windows => true,
-            TargetPlatform.android || TargetPlatform.iOS || TargetPlatform.fuchsia => false,
-          };
+      switch (defaultTargetPlatform) {
+        TargetPlatform.macOS ||
+        TargetPlatform.linux ||
+        TargetPlatform.windows => true,
+        TargetPlatform.android ||
+        TargetPlatform.iOS ||
+        TargetPlatform.fuchsia => false,
+      };
 }
 
 /// Page indicator for desktop and web platforms.

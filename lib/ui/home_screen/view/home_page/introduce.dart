@@ -113,10 +113,7 @@ class _ResponsiveGrid extends StatelessWidget {
   final int crossAxisCount;
   final List<Widget> children;
 
-  const _ResponsiveGrid({
-    required this.crossAxisCount,
-    required this.children,
-  });
+  const _ResponsiveGrid({required this.crossAxisCount, required this.children});
 
   @override
   Widget build(BuildContext context) {
@@ -132,10 +129,10 @@ class _ResponsiveGrid extends StatelessWidget {
           children: children
               .map(
                 (child) => SizedBox(
-              width: itemWidth,
-              child: Center(child: child),
-            ),
-          )
+                  width: itemWidth,
+                  child: Center(child: child),
+                ),
+              )
               .toList(),
         );
       },
