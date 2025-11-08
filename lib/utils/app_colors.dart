@@ -4,6 +4,7 @@ class AppColors {
   static const cardColor = Color(0xFF262837);
   static const schemeSeedColor = Color(0xFF000000);
 
+  static const black000000 = Color(0xFF000000);
   static const black2E2E2E = Color(0xFF2E2E2E);
   static const black242B35 = Color(0xFF242B35);
 

@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/utils/app_constants.dart';
 
+import '../../../hiragana/view/hiragana.dart';
+import 'basic_item_home.dart';
+
 class Introduce extends StatelessWidget {
   const Introduce({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // Lấy kích thước màn hình
     final screenWidth = MediaQuery.of(context).size.width;
 
-    // Tính số cột dựa trên kích thước màn hình
     int crossAxisCount;
     if (screenWidth < 600) {
       crossAxisCount = 2; // Mobile
@@ -40,24 +41,24 @@ class Introduce extends StatelessWidget {
           _ResponsiveGrid(
             crossAxisCount: crossAxisCount,
             children: const [
-              _BasicItem(
+              BasicItem(
                 icon: Icons.temple_buddhist,
-                title: 'JLPT là gì?',
+                title: AppStrings.jlpt,
                 color: Color(0xFFEF767A),
               ),
-              _BasicItem(
+              BasicItem(
                 icon: Icons.dashboard_customize,
-                title: 'Cấu trúc đề thi',
+                title: AppStrings.cauTrucDeThi,
                 color: Color(0xFFFEBE7E),
               ),
-              _BasicItem(
+              BasicItem(
                 icon: Icons.edit_document,
-                title: 'Đăng ký thi',
+                title: AppStrings.dangKyThi,
                 color: Color(0xFF6CC4A1),
               ),
-              _BasicItem(
+              BasicItem(
                 icon: Icons.info_outline,
-                title: 'Giới thiệu tiếng Nhật',
+                title: AppStrings.gioiThieuTiengNhat,
                 color: Color(0xFF7AA5D2),
               ),
             ],
@@ -69,7 +70,7 @@ class Introduce extends StatelessWidget {
           // PHẦN 2: Kiến thức cơ bản
           // ---------------------
           const Text(
-            'Kiến thức cơ bản',
+            AppStrings.kienThucCoBan,
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.bold,
@@ -80,20 +81,26 @@ class Introduce extends StatelessWidget {
 
           _ResponsiveGrid(
             crossAxisCount: crossAxisCount,
-            children: const [
-              _BasicItem(
+            children: [
+              BasicItem(
                 icon: Icons.abc,
-                title: 'Bảng chữ cái',
-                color: Color(0xFF67C5B5),
+                title: AppStrings.bangChuCai,
+                color: const Color(0xFF67C5B5),
+                onPress: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HiraganaListPage()),
+                  );
+                },
               ),
-              _BasicItem(
+              const BasicItem(
                 icon: Icons.book,
-                title: 'Mina no Nihongo 1\n(N5)',
+                title: AppStrings.amDuc,
                 color: Color(0xFF6C84E0),
               ),
-              _BasicItem(
+              const BasicItem(
                 icon: Icons.menu_book,
-                title: 'Mina no Nihongo 2\n(N5)',
+                title: AppStrings.amBanDuc,
                 color: Color(0xFF6C5BD0),
               ),
             ],
@@ -136,41 +143,6 @@ class _ResponsiveGrid extends StatelessWidget {
               .toList(),
         );
       },
-    );
-  }
-}
-
-//
-// ✅ Widget item con
-//
-class _BasicItem extends StatelessWidget {
-  final IconData icon;
-  final String title;
-  final Color color;
-
-  const _BasicItem({
-    required this.icon,
-    required this.title,
-    required this.color,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        CircleAvatar(
-          radius: 28,
-          backgroundColor: color.withOpacity(0.2),
-          child: Icon(icon, color: color, size: 28),
-        ),
-        const SizedBox(height: 6),
-        Text(
-          title,
-          textAlign: TextAlign.center,
-          style: const TextStyle(fontSize: 12, color: Colors.black87),
-        ),
-      ],
     );
   }
 }

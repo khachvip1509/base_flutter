@@ -7,7 +7,7 @@ const fontFamilyMain = "Helveticaneue";
 const paddingLeftRight = EdgeInsets.only(left: 16, right: 16);
 
 const fontSizeNomal = 16.0;
-const fontSizeNomalvalidate = 13.0;
+const fontSizeNomalValidate = 13.0;
 const fontSizeBold = 18.0;
 const fontSizeBoldHeaderBar = 18.0;
 
@@ -17,7 +17,7 @@ const headerStyle = TextStyle(
 );
 
 const normalStyleValidate = TextStyle(
-  fontSize: fontSizeNomalvalidate,
+  fontSize: fontSizeNomalValidate,
   fontFamily: fontFamilyMain,
   fontWeight: FontWeight.w200,
   color: AppColors.orangeFFD09D,
@@ -27,14 +27,14 @@ const normalStyle = TextStyle(
   fontSize: fontSizeNomal,
   fontFamily: fontFamilyMain,
   fontWeight: FontWeight.w400,
-  color: AppColors.orangeFFD09D,
+  color: AppColors.green009438,
 );
 
 const boldStyle = TextStyle(
-  fontWeight: FontWeight.bold,
-  color: AppColors.orangeFFD09D,
-  fontFamily: fontFamilyMain,
   fontSize: fontSizeBold,
+  fontFamily: fontFamilyMain,
+  fontWeight: FontWeight.bold,
+  color: AppColors.black000000,
 );
 
 const nomalDecoration = BoxDecoration(

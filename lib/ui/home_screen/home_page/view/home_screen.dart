@@ -3,6 +3,7 @@ import 'package:untitled/utils/app_constants.dart';
 import 'package:untitled/utils/carousel_view_custom/hero_layout_card.dart';
 import 'package:untitled/utils/carousel_view_custom/normal_layout_card.dart';
 
+import '../../app_bar/view/app_bar.dart';
 import 'introduce.dart';
 
 class ExampleDestination {
@@ -37,7 +38,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       home: NavigationDrawerExample(),
     );
   }
@@ -72,8 +73,8 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
                   Expanded(
                     child: ListView(
                       children: [
-                        HeroLayoutCard(),
-                        const SizedBox(height: 20),
+                        // HeroLayoutCard(),
+                        // const SizedBox(height: 20),
                         Introduce(),
                         const SizedBox(height: 20),
                         NormalLayoutCard(),
@@ -119,6 +120,18 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
 
   Widget buildBottomBarScaffold() {
     return Scaffold(
+      appBar: AppBar(
+        leading: const MenuLeading(),
+        title: Text(AppStrings.appName, style: AppTextStyle.s23w500cWhite),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
+        actions: [
+          IconButton(
+            onPressed: () => Scaffold.of(context).openEndDrawer(),
+            icon: const Icon(Icons.person),
+          ),
+        ],
+      ),
       body: TabBarView(controller: _tabController, children: _pages),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _tabController.index,
@@ -153,13 +166,50 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
           ),
         ],
       ),
+      endDrawer: NavigationDrawer(
+        children: [
+          const Padding(
+            padding: EdgeInsets.fromLTRB(28, 16, 16, 10),
+            child: Text('Header'),
+          ),
+          ...destinations.map((destination) {
+            return NavigationDrawerDestination(
+              label: Text(destination.label),
+              icon: destination.icon,
+              selectedIcon: destination.selectedIcon,
+            );
+          }),
+          const Padding(
+            padding: EdgeInsets.fromLTRB(28, 16, 28, 10),
+            child: Divider(),
+          ),
+        ],
+      ),
     );
   }
 
   Widget buildDrawerScaffold(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: const MenuLeading(),
+        title: Text(AppStrings.appName, style: AppTextStyle.s23w500cWhite),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
+        actions: [
+          Builder(
+            builder: (context) => IconButton(
+              onPressed: () => Scaffold.of(context).openEndDrawer(),
+              icon: const Icon(
+                Icons.person,
+                size: AppNumbs.sizeAvt,
+                color: Colors.white,
+              ),
+              tooltip: AppStrings.guess,
+            ),
+          ),
+        ],
+      ),
       body: TabBarView(controller: _tabController, children: _pages),
-
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _tabController.index,
         type: BottomNavigationBarType.fixed,
@@ -193,6 +243,25 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
           ),
         ],
       ),
+      endDrawer: NavigationDrawer(
+        children: [
+          const Padding(
+            padding: EdgeInsets.fromLTRB(28, 16, 16, 10),
+            child: Text('Header'),
+          ),
+          ...destinations.map((destination) {
+            return NavigationDrawerDestination(
+              label: Text(destination.label),
+              icon: destination.icon,
+              selectedIcon: destination.selectedIcon,
+            );
+          }),
+          const Padding(
+            padding: EdgeInsets.fromLTRB(28, 16, 28, 10),
+            child: Divider(),
+          ),
+        ],
+      ),
     );
   }
 
@@ -200,6 +269,7 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
   void didChangeDependencies() {
     super.didChangeDependencies();
     showNavigationDrawer = MediaQuery.of(context).size.width >= 450;
+    showNavigationDrawer =false;
   }
 
   @override

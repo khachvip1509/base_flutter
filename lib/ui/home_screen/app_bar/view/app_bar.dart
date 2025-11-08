@@ -1,8 +1,10 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:untitled/app_routers/screens.dart';
 
-import '../../../../../utils/app_constants.dart';
+import '../../../../../../utils/app_constants.dart';
 
 class MenuLeading extends StatefulWidget {
   const MenuLeading({super.key});
@@ -21,7 +23,7 @@ class _MenuLeadingState extends State<MenuLeading>
     {'label': AppStrings.loTrinh, 'icon': Icons.rocket},
     {'label': AppStrings.thi, 'icon': Icons.star},
     {'label': AppStrings.nangCap, 'icon': Icons.diamond},
-    {'label': AppStrings.luyenTap, 'icon': Icons.settings},
+    {'label': AppStrings.caiDat, 'icon': Icons.settings},
   ];
 
   @override
@@ -87,9 +89,10 @@ class _MenuLeadingState extends State<MenuLeading>
                         borderRadius: BorderRadius.circular(12),
                         onTap: () {
                           _closeMenu();
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(content: Text('Chọn: ${e['label']}')),
-                          );
+                          if (e['label'] == AppStrings.luyenTap) {
+                            Get.toNamed(Home.home);
+                          }
+
                         },
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
