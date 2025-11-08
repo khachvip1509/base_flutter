@@ -15,3 +15,6 @@ class Profile{
 class Exam{
   static const exam = '/exam';
 }
+class Quiz{
+  static const quiz = '/quiz';
+}

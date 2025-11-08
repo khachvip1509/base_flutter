@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/ui/quiz_screen/view/quiz_screen.dart';
 import 'package:untitled/utils/app_constants.dart';
-import 'package:untitled/utils/carousel_view_custom/hero_layout_card.dart';
 import 'package:untitled/utils/carousel_view_custom/normal_layout_card.dart';
 
 import '../../app_bar/view/app_bar.dart';
@@ -89,7 +89,7 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
       ),
     ),
     const Center(child: Text(AppStrings.loTrinh)),
-    const Center(child: Text(AppStrings.thi)),
+    const QuizScreen(level: 'n5'),
     const Center(child: Text(AppStrings.nangCap)),
     const Center(child: Text(AppStrings.caiDat)),
   ];

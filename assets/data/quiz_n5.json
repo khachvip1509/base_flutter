@@ -1,0 +1,12 @@
+[
+  {
+    "question": "Từ nào sau đây có nghĩa là 'nước'?",
+    "options": ["火", "水", "木", "金"],
+    "answer": 1
+  },
+  {
+    "question": "Từ nào có nghĩa là 'lửa'?",
+    "options": ["水", "火", "土", "風"],
+    "answer": 1
+  }
+]
