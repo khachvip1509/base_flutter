@@ -3,6 +3,7 @@ import 'package:untitled/ui/quiz_screen/view/quiz_screen.dart';
 import 'package:untitled/utils/app_constants.dart';
 import 'package:untitled/utils/carousel_view_custom/normal_layout_card.dart';
 
+import '../../../setting_screen/view/screen_screen.dart';
 import '../../app_bar/view/app_bar.dart';
 import 'introduce.dart';
 
@@ -76,8 +77,8 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
                         // HeroLayoutCard(),
                         // const SizedBox(height: 20),
                         Introduce(),
-                        const SizedBox(height: 20),
-                        NormalLayoutCard(),
+                        // const SizedBox(height: 20),
+                        // NormalLayoutCard(),
                       ],
                     ),
                   ),
@@ -89,9 +90,9 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
       ),
     ),
     const Center(child: Text(AppStrings.loTrinh)),
-    const QuizScreen(level: 'n5'),
+    const QuizScreen(),
     const Center(child: Text(AppStrings.nangCap)),
-    const Center(child: Text(AppStrings.caiDat)),
+    SettingsScreen()
   ];
 
   @override

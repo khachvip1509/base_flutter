@@ -1,0 +1,2978 @@
+[
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'ge'?",
+    "options": [
+      "そ",
+      "ま",
+      "げ",
+      "と"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'くるま' phiên âm là gì?",
+    "options": [
+      "kuruma",
+      "shi",
+      "byo",
+      "ke"
+    ],
+    "answerIndex": 0,
+    "meaning": "xe ô tô"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ku'?",
+    "options": [
+      "く",
+      "は",
+      "れ",
+      "わ"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'みょ' phiên âm là gì?",
+    "options": [
+      "nu",
+      "myo",
+      "kya",
+      "pyu"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'ぎゃ' phiên âm là gì?",
+    "options": [
+      "ri",
+      "gya",
+      "nyu",
+      "byo"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'お' phiên âm là gì?",
+    "options": [
+      "mo",
+      "o",
+      "u",
+      "sa"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'ぴゃ' phiên âm là gì?",
+    "options": [
+      "sho",
+      "pya",
+      "re",
+      "mo"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'ゆ' phiên âm là gì?",
+    "options": [
+      "yu",
+      "ha",
+      "mi",
+      "me"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm bán đục",
+    "question": "Chữ nào là 'pa'?",
+    "options": [
+      "む",
+      "け",
+      "ぱ",
+      "る"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'ga'?",
+    "options": [
+      "だ",
+      "こ",
+      "が",
+      "を"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'he'?",
+    "options": [
+      "せ",
+      "へ",
+      "く",
+      "つ"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'mizu'?",
+    "options": [
+      "お",
+      "みず",
+      "ろ",
+      "と"
+    ],
+    "answerIndex": 1,
+    "meaning": "nước"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'よ' phiên âm là gì?",
+    "options": [
+      "ha",
+      "nu",
+      "ho",
+      "yo"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'so'?",
+    "options": [
+      "る",
+      "そ",
+      "き",
+      "は"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'wa'?",
+    "options": [
+      "わ",
+      "も",
+      "し",
+      "ら"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'ひ' phiên âm là gì?",
+    "options": [
+      "mo",
+      "hi",
+      "n",
+      "ke"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'じゅ' phiên âm là gì?",
+    "options": [
+      "ke",
+      "ju",
+      "hi",
+      "jo"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'nyu'?",
+    "options": [
+      "む",
+      "にゅ",
+      "ぬ",
+      "ふ"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'byu'?",
+    "options": [
+      "ぎゃ",
+      "さ",
+      "びゅ",
+      "りゃ"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'kyu'?",
+    "options": [
+      "し",
+      "ちゃ",
+      "じょ",
+      "きゅ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'e'?",
+    "options": [
+      "そ",
+      "け",
+      "は",
+      "え"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'cho'?",
+    "options": [
+      "き",
+      "りゅ",
+      "と",
+      "ちょ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'myu'?",
+    "options": [
+      "みゅ",
+      "みゃ",
+      "お",
+      "る"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm bán đục",
+    "question": "Chữ nào là 'po'?",
+    "options": [
+      "え",
+      "り",
+      "ぽ",
+      "お"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'kaze'?",
+    "options": [
+      "い",
+      "かぜ",
+      "ま",
+      "ぐ"
+    ],
+    "answerIndex": 1,
+    "meaning": "gió"
+  },
+  {
+    "category": "Âm bán đục",
+    "question": "Chữ nào là 'pu'?",
+    "options": [
+      "こ",
+      "み",
+      "ら",
+      "ぷ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'hon'?",
+    "options": [
+      "ほん",
+      "み",
+      "つ",
+      "や"
+    ],
+    "answerIndex": 0,
+    "meaning": "sách"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'ま' phiên âm là gì?",
+    "options": [
+      "ku",
+      "na",
+      "ni",
+      "ma"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'mo'?",
+    "options": [
+      "る",
+      "ぬ",
+      "も",
+      "せ"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'しょ' phiên âm là gì?",
+    "options": [
+      "sho",
+      "cho",
+      "ryo",
+      "ko"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'nya'?",
+    "options": [
+      "ひょ",
+      "にゃ",
+      "ぬ",
+      "にょ"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'む' phiên âm là gì?",
+    "options": [
+      "mu",
+      "tsu",
+      "ya",
+      "chi"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'yo'?",
+    "options": [
+      "こ",
+      "に",
+      "よ",
+      "た"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'kyo'?",
+    "options": [
+      "い",
+      "きゃ",
+      "み",
+      "きょ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 're'?",
+    "options": [
+      "み",
+      "れ",
+      "の",
+      "け"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'とり' phiên âm là gì?",
+    "options": [
+      "za",
+      "tori",
+      "cho",
+      "kyu"
+    ],
+    "answerIndex": 1,
+    "meaning": "chim"
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'hyu'?",
+    "options": [
+      "ふ",
+      "ひゅ",
+      "みょ",
+      "み"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'chu'?",
+    "options": [
+      "も",
+      "きゃ",
+      "ちゅ",
+      "う"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'zu'?",
+    "options": [
+      "ず",
+      "ま",
+      "ぬ",
+      "ら"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'あ' phiên âm là gì?",
+    "options": [
+      "na",
+      "a",
+      "mi",
+      "me"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ha'?",
+    "options": [
+      "う",
+      "れ",
+      "く",
+      "は"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'ろ' phiên âm là gì?",
+    "options": [
+      "ho",
+      "o",
+      "se",
+      "ro"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'ざ' phiên âm là gì?",
+    "options": [
+      "za",
+      "de",
+      "ra",
+      "mo"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'さくら' phiên âm là gì?",
+    "options": [
+      "sakura",
+      "ko",
+      "sa",
+      "mo"
+    ],
+    "answerIndex": 0,
+    "meaning": "hoa anh đào"
+  },
+  {
+    "category": "Âm bán đục",
+    "question": "'ぽ' phiên âm là gì?",
+    "options": [
+      "ma",
+      "ya",
+      "po",
+      "tsu"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'ひ' phiên âm là gì?",
+    "options": [
+      "i",
+      "ru",
+      "mya",
+      "hi"
+    ],
+    "answerIndex": 3,
+    "meaning": "lửa"
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'そら' phiên âm là gì?",
+    "options": [
+      "sora",
+      "bo",
+      "ku",
+      "ri"
+    ],
+    "answerIndex": 0,
+    "meaning": "bầu trời"
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'ほん' phiên âm là gì?",
+    "options": [
+      "ya",
+      "he",
+      "hon",
+      "ra"
+    ],
+    "answerIndex": 2,
+    "meaning": "sách"
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'mya'?",
+    "options": [
+      "ひ",
+      "みゃ",
+      "しゅ",
+      "を"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'tsu'?",
+    "options": [
+      "つ",
+      "る",
+      "け",
+      "を"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'gu'?",
+    "options": [
+      "う",
+      "ほ",
+      "え",
+      "ぐ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'はな' phiên âm là gì?",
+    "options": [
+      "hana",
+      "hi",
+      "do",
+      "go"
+    ],
+    "answerIndex": 0,
+    "meaning": "hoa"
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'じゃ' phiên âm là gì?",
+    "options": [
+      "ja",
+      "cho",
+      "ra",
+      "u"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ko'?",
+    "options": [
+      "た",
+      "な",
+      "こ",
+      "め"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'ね' phiên âm là gì?",
+    "options": [
+      "ne",
+      "ka",
+      "he",
+      "e"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'byo'?",
+    "options": [
+      "りょ",
+      "ふ",
+      "りゃ",
+      "びょ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'rya'?",
+    "options": [
+      "い",
+      "りゃ",
+      "は",
+      "りゅ"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'inu'?",
+    "options": [
+      "け",
+      "いぬ",
+      "しゅ",
+      "ぱ"
+    ],
+    "answerIndex": 1,
+    "meaning": "con chó"
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'りゅ' phiên âm là gì?",
+    "options": [
+      "nyo",
+      "ryu",
+      "o",
+      "ha"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'pyo'?",
+    "options": [
+      "ちょ",
+      "ゆ",
+      "ひ",
+      "ぴょ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'みず' phiên âm là gì?",
+    "options": [
+      "bu",
+      "mizu",
+      "ju",
+      "nyo"
+    ],
+    "answerIndex": 1,
+    "meaning": "nước"
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'bya'?",
+    "options": [
+      "み",
+      "ひょ",
+      "びゃ",
+      "ひ"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'ご' phiên âm là gì?",
+    "options": [
+      "go",
+      "tsu",
+      "ma",
+      "ba"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'きょ' phiên âm là gì?",
+    "options": [
+      "nya",
+      "n",
+      "kyo",
+      "gyo"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'しゃ' phiên âm là gì?",
+    "options": [
+      "sha",
+      "pyu",
+      "mu",
+      "ki"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'zo'?",
+    "options": [
+      "え",
+      "む",
+      "ぞ",
+      "な"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'しゅ' phiên âm là gì?",
+    "options": [
+      "te",
+      "kyo",
+      "me",
+      "shu"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'じょ' phiên âm là gì?",
+    "options": [
+      "mo",
+      "nu",
+      "jo",
+      "he"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'no'?",
+    "options": [
+      "そ",
+      "か",
+      "ふ",
+      "の"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'りゃ' phiên âm là gì?",
+    "options": [
+      "rya",
+      "byu",
+      "mu",
+      "ryo"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'い' phiên âm là gì?",
+    "options": [
+      "u",
+      "i",
+      "te",
+      "mo"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'と' phiên âm là gì?",
+    "options": [
+      "e",
+      "mu",
+      "to",
+      "ne"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'びょ' phiên âm là gì?",
+    "options": [
+      "no",
+      "byo",
+      "cha",
+      "yo"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm bán đục",
+    "question": "Chữ nào là 'pi'?",
+    "options": [
+      "ぴ",
+      "ん",
+      "て",
+      "ぽ"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'neko'?",
+    "options": [
+      "ぼ",
+      "りゃ",
+      "け",
+      "ねこ"
+    ],
+    "answerIndex": 3,
+    "meaning": "con mèo"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'み' phiên âm là gì?",
+    "options": [
+      "wo",
+      "mi",
+      "ya",
+      "ko"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'yama'?",
+    "options": [
+      "む",
+      "ち",
+      "ど",
+      "やま"
+    ],
+    "answerIndex": 3,
+    "meaning": "núi"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'も' phiên âm là gì?",
+    "options": [
+      "he",
+      "no",
+      "mo",
+      "so"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'きゃ' phiên âm là gì?",
+    "options": [
+      "kya",
+      "ta",
+      "ro",
+      "ju"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'ねこ' phiên âm là gì?",
+    "options": [
+      "zu2",
+      "po",
+      "neko",
+      "ja"
+    ],
+    "answerIndex": 2,
+    "meaning": "con mèo"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'た' phiên âm là gì?",
+    "options": [
+      "ta",
+      "ma",
+      "u",
+      "o"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'ぜ' phiên âm là gì?",
+    "options": [
+      "fu",
+      "ni",
+      "ze",
+      "ya"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'いぬ' phiên âm là gì?",
+    "options": [
+      "inu",
+      "pya",
+      "mu",
+      "gyo"
+    ],
+    "answerIndex": 0,
+    "meaning": "con chó"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'へ' phiên âm là gì?",
+    "options": [
+      "i",
+      "ro",
+      "he",
+      "mi"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ta'?",
+    "options": [
+      "ろ",
+      "た",
+      "へ",
+      "ゆ"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'せ' phiên âm là gì?",
+    "options": [
+      "re",
+      "se",
+      "ki",
+      "ya"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'ひゃ' phiên âm là gì?",
+    "options": [
+      "yo",
+      "hya",
+      "to",
+      "se"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ka'?",
+    "options": [
+      "る",
+      "な",
+      "か",
+      "の"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'ぎょ' phiên âm là gì?",
+    "options": [
+      "gyo",
+      "ro",
+      "ki",
+      "ke"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'gyu'?",
+    "options": [
+      "て",
+      "にょ",
+      "ぎゅ",
+      "れ"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ho'?",
+    "options": [
+      "を",
+      "ほ",
+      "む",
+      "よ"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'gyo'?",
+    "options": [
+      "ぎょ",
+      "さ",
+      "ぎゃ",
+      "め"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'shu'?",
+    "options": [
+      "た",
+      "じょ",
+      "しゅ",
+      "びゃ"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'su'?",
+    "options": [
+      "さ",
+      "す",
+      "お",
+      "を"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'kya'?",
+    "options": [
+      "きゃ",
+      "お",
+      "ゆ",
+      "な"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'く' phiên âm là gì?",
+    "options": [
+      "yo",
+      "ne",
+      "nu",
+      "ku"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'は' phiên âm là gì?",
+    "options": [
+      "ho",
+      "fu",
+      "ha",
+      "yu"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'ち' phiên âm là gì?",
+    "options": [
+      "re",
+      "wa",
+      "chi",
+      "e"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ra'?",
+    "options": [
+      "ね",
+      "わ",
+      "は",
+      "ら"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'ら' phiên âm là gì?",
+    "options": [
+      "ra",
+      "ho",
+      "shi",
+      "tsu"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm bán đục",
+    "question": "'ぴ' phiên âm là gì?",
+    "options": [
+      "no",
+      "he",
+      "pi",
+      "ke"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'び' phiên âm là gì?",
+    "options": [
+      "wo",
+      "bi",
+      "ta",
+      "ba"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'な' phiên âm là gì?",
+    "options": [
+      "ri",
+      "to",
+      "na",
+      "sa"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'にゅ' phiên âm là gì?",
+    "options": [
+      "kya",
+      "nyu",
+      "byo",
+      "ta"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'ji'?",
+    "options": [
+      "か",
+      "ん",
+      "じ",
+      "で"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'n'?",
+    "options": [
+      "ん",
+      "け",
+      "つ",
+      "き"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'し' phiên âm là gì?",
+    "options": [
+      "ta",
+      "shi",
+      "i",
+      "hi"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'りょ' phiên âm là gì?",
+    "options": [
+      "kya",
+      "sa",
+      "se",
+      "ryo"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'mi'?",
+    "options": [
+      "み",
+      "む",
+      "ふ",
+      "う"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'ぎ' phiên âm là gì?",
+    "options": [
+      "gi",
+      "no",
+      "to",
+      "mi"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'sakura'?",
+    "options": [
+      "さくら",
+      "ね",
+      "な",
+      "お"
+    ],
+    "answerIndex": 0,
+    "meaning": "hoa anh đào"
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'be'?",
+    "options": [
+      "じ",
+      "べ",
+      "ろ",
+      "の"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'れ' phiên âm là gì?",
+    "options": [
+      "ri",
+      "me",
+      "re",
+      "tsu"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'け' phiên âm là gì?",
+    "options": [
+      "chi",
+      "ke",
+      "na",
+      "yo"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'me'?",
+    "options": [
+      "れ",
+      "め",
+      "い",
+      "ふ"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'げ' phiên âm là gì?",
+    "options": [
+      "ra",
+      "ba",
+      "ge",
+      "me"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'ji2'?",
+    "options": [
+      "へ",
+      "が",
+      "ぢ",
+      "け"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'sa'?",
+    "options": [
+      "え",
+      "は",
+      "さ",
+      "も"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'つ' phiên âm là gì?",
+    "options": [
+      "me",
+      "tsu",
+      "fu",
+      "wa"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'ba'?",
+    "options": [
+      "が",
+      "ち",
+      "ば",
+      "め"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'sora'?",
+    "options": [
+      "ろ",
+      "ぴゅ",
+      "へ",
+      "そら"
+    ],
+    "answerIndex": 3,
+    "meaning": "bầu trời"
+  },
+  {
+    "category": "Âm đục",
+    "question": "'ど' phiên âm là gì?",
+    "options": [
+      "bu",
+      "chi",
+      "ji",
+      "do"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'に' phiên âm là gì?",
+    "options": [
+      "no",
+      "e",
+      "ni",
+      "ma"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'ともだち' phiên âm là gì?",
+    "options": [
+      "no",
+      "byo",
+      "shi",
+      "tomodachi"
+    ],
+    "answerIndex": 3,
+    "meaning": "bạn bè"
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'tori'?",
+    "options": [
+      "さ",
+      "げ",
+      "とり",
+      "で"
+    ],
+    "answerIndex": 2,
+    "meaning": "chim"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'や' phiên âm là gì?",
+    "options": [
+      "wa",
+      "i",
+      "ya",
+      "n"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'ぼ' phiên âm là gì?",
+    "options": [
+      "te",
+      "bo",
+      "zu",
+      "ka"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'gi'?",
+    "options": [
+      "ゆ",
+      "ぎ",
+      "が",
+      "ふ"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ru'?",
+    "options": [
+      "る",
+      "な",
+      "わ",
+      "ろ"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'め' phiên âm là gì?",
+    "options": [
+      "ho",
+      "hi",
+      "me",
+      "so"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm bán đục",
+    "question": "'ぱ' phiên âm là gì?",
+    "options": [
+      "yu",
+      "pa",
+      "ka",
+      "wo"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'にょ' phiên âm là gì?",
+    "options": [
+      "ju",
+      "myo",
+      "gya",
+      "nyo"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'き' phiên âm là gì?",
+    "options": [
+      "ki",
+      "ya",
+      "na",
+      "e"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'びゃ' phiên âm là gì?",
+    "options": [
+      "hi",
+      "bya",
+      "ma",
+      "ho"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'す' phiên âm là gì?",
+    "options": [
+      "so",
+      "mi",
+      "ro",
+      "su"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'づ' phiên âm là gì?",
+    "options": [
+      "wo",
+      "zu2",
+      "zu",
+      "me"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'で' phiên âm là gì?",
+    "options": [
+      "de",
+      "ya",
+      "gu",
+      "nu"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'kuruma'?",
+    "options": [
+      "と",
+      "れ",
+      "こ",
+      "くるま"
+    ],
+    "answerIndex": 3,
+    "meaning": "xe ô tô"
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'cha'?",
+    "options": [
+      "て",
+      "ひ",
+      "る",
+      "ちゃ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'ちゅ' phiên âm là gì?",
+    "options": [
+      "gyo",
+      "chu",
+      "nu",
+      "no"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'て' phiên âm là gì?",
+    "options": [
+      "a",
+      "he",
+      "te",
+      "wo"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'ず' phiên âm là gì?",
+    "options": [
+      "zu",
+      "ra",
+      "nu",
+      "i"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'わ' phiên âm là gì?",
+    "options": [
+      "wa",
+      "hi",
+      "yo",
+      "no"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'みゅ' phiên âm là gì?",
+    "options": [
+      "u",
+      "yo",
+      "myu",
+      "ru"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ro'?",
+    "options": [
+      "う",
+      "ろ",
+      "す",
+      "は"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm bán đục",
+    "question": "'ぷ' phiên âm là gì?",
+    "options": [
+      "a",
+      "ra",
+      "pu",
+      "mu"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'ひゅ' phiên âm là gì?",
+    "options": [
+      "se",
+      "hyu",
+      "te",
+      "e"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'くだもの' phiên âm là gì?",
+    "options": [
+      "chi",
+      "ge",
+      "kudamono",
+      "nya"
+    ],
+    "answerIndex": 2,
+    "meaning": "trái cây"
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'sho'?",
+    "options": [
+      "びゃ",
+      "ちょ",
+      "せ",
+      "しょ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'ryu'?",
+    "options": [
+      "と",
+      "ひゃ",
+      "じょ",
+      "りゅ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'bu'?",
+    "options": [
+      "ち",
+      "ぶ",
+      "は",
+      "そ"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'がっこう' phiên âm là gì?",
+    "options": [
+      "mya",
+      "gakkou",
+      "e",
+      "nu"
+    ],
+    "answerIndex": 1,
+    "meaning": "trường học"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ma'?",
+    "options": [
+      "を",
+      "に",
+      "す",
+      "ま"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'sha'?",
+    "options": [
+      "しゃ",
+      "に",
+      "みゃ",
+      "な"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'ja'?",
+    "options": [
+      "け",
+      "ち",
+      "じゃ",
+      "きょ"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'bi'?",
+    "options": [
+      "が",
+      "よ",
+      "び",
+      "に"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'nu'?",
+    "options": [
+      "さ",
+      "せ",
+      "な",
+      "ぬ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ri'?",
+    "options": [
+      "さ",
+      "を",
+      "り",
+      "え"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'jo'?",
+    "options": [
+      "きゅ",
+      "あ",
+      "へ",
+      "じょ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'hi'?",
+    "options": [
+      "ちょ",
+      "づ",
+      "ぞ",
+      "ひ"
+    ],
+    "answerIndex": 3,
+    "meaning": "lửa"
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'go'?",
+    "options": [
+      "め",
+      "き",
+      "ご",
+      "を"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'ju'?",
+    "options": [
+      "も",
+      "ね",
+      "ぴゃ",
+      "じゅ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'う' phiên âm là gì?",
+    "options": [
+      "ra",
+      "o",
+      "ni",
+      "u"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'ぬ' phiên âm là gì?",
+    "options": [
+      "ma",
+      "nu",
+      "mu",
+      "yu"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'ぐ' phiên âm là gì?",
+    "options": [
+      "gu",
+      "de",
+      "te",
+      "mo"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'ほ' phiên âm là gì?",
+    "options": [
+      "ko",
+      "so",
+      "ho",
+      "re"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'chi'?",
+    "options": [
+      "け",
+      "ち",
+      "へ",
+      "よ"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'u'?",
+    "options": [
+      "ほ",
+      "わ",
+      "ひ",
+      "う"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'ze'?",
+    "options": [
+      "ぜ",
+      "ら",
+      "ふ",
+      "う"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'kudamono'?",
+    "options": [
+      "ぷ",
+      "ぎゃ",
+      "び",
+      "くだもの"
+    ],
+    "answerIndex": 3,
+    "meaning": "trái cây"
+  },
+  {
+    "category": "Âm đục",
+    "question": "'ば' phiên âm là gì?",
+    "options": [
+      "nu",
+      "chi",
+      "ba",
+      "gu"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'sakana'?",
+    "options": [
+      "ぴ",
+      "さかな",
+      "く",
+      "そ"
+    ],
+    "answerIndex": 1,
+    "meaning": "cá"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'か' phiên âm là gì?",
+    "options": [
+      "o",
+      "re",
+      "nu",
+      "ka"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'hana'?",
+    "options": [
+      "な",
+      "しゃ",
+      "はな",
+      "だ"
+    ],
+    "answerIndex": 2,
+    "meaning": "hoa"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'り' phiên âm là gì?",
+    "options": [
+      "i",
+      "mo",
+      "ho",
+      "ri"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'きゅ' phiên âm là gì?",
+    "options": [
+      "ru",
+      "shi",
+      "ra",
+      "kyu"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'ちゃ' phiên âm là gì?",
+    "options": [
+      "e",
+      "nu",
+      "cha",
+      "sa"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm bán đục",
+    "question": "Chữ nào là 'pe'?",
+    "options": [
+      "さ",
+      "ぺ",
+      "し",
+      "み"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'かぜ' phiên âm là gì?",
+    "options": [
+      "ma",
+      "kaze",
+      "yo",
+      "ze"
+    ],
+    "answerIndex": 1,
+    "meaning": "gió"
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'bo'?",
+    "options": [
+      "え",
+      "ぼ",
+      "つ",
+      "べ"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'jitensha'?",
+    "options": [
+      "に",
+      "みゅ",
+      "ほ",
+      "じてんしゃ"
+    ],
+    "answerIndex": 3,
+    "meaning": "xe đạp"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'wo'?",
+    "options": [
+      "に",
+      "ま",
+      "を",
+      "の"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'びゅ' phiên âm là gì?",
+    "options": [
+      "pya",
+      "wa",
+      "myo",
+      "byu"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'fu'?",
+    "options": [
+      "ひ",
+      "す",
+      "ふ",
+      "と"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'こ' phiên âm là gì?",
+    "options": [
+      "ra",
+      "mi",
+      "ta",
+      "ko"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'ん' phiên âm là gì?",
+    "options": [
+      "n",
+      "sa",
+      "yo",
+      "te"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ya'?",
+    "options": [
+      "め",
+      "ち",
+      "や",
+      "け"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'gya'?",
+    "options": [
+      "しょ",
+      "さ",
+      "ぴゅ",
+      "ぎゃ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'se'?",
+    "options": [
+      "と",
+      "き",
+      "せ",
+      "よ"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'hya'?",
+    "options": [
+      "みゃ",
+      "ひゃ",
+      "た",
+      "く"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'mise'?",
+    "options": [
+      "みせ",
+      "ちゅ",
+      "ぺ",
+      "べ"
+    ],
+    "answerIndex": 0,
+    "meaning": "cửa hàng"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'yu'?",
+    "options": [
+      "よ",
+      "や",
+      "て",
+      "ゆ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'gakkou'?",
+    "options": [
+      "で",
+      "ら",
+      "がっこう",
+      "は"
+    ],
+    "answerIndex": 2,
+    "meaning": "trường học"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'を' phiên âm là gì?",
+    "options": [
+      "so",
+      "su",
+      "n",
+      "wo"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'de'?",
+    "options": [
+      "な",
+      "げ",
+      "で",
+      "ぎ"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'mu'?",
+    "options": [
+      "む",
+      "ま",
+      "こ",
+      "な"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'が' phiên âm là gì?",
+    "options": [
+      "wa",
+      "ru",
+      "ji",
+      "ga"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'pya'?",
+    "options": [
+      "ね",
+      "ぴゃ",
+      "ま",
+      "ふ"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm bán đục",
+    "question": "'ぺ' phiên âm là gì?",
+    "options": [
+      "su",
+      "chi",
+      "ha",
+      "pe"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'ぴゅ' phiên âm là gì?",
+    "options": [
+      "pyu",
+      "ryo",
+      "ho",
+      "he"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'さ' phiên âm là gì?",
+    "options": [
+      "se",
+      "shi",
+      "ra",
+      "sa"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'だ' phiên âm là gì?",
+    "options": [
+      "do",
+      "ko",
+      "da",
+      "te"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'a'?",
+    "options": [
+      "あ",
+      "こ",
+      "か",
+      "お"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'pyu'?",
+    "options": [
+      "け",
+      "を",
+      "ん",
+      "ぴゅ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'にゃ' phiên âm là gì?",
+    "options": [
+      "su",
+      "gyo",
+      "nya",
+      "shi"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'じてんしゃ' phiên âm là gì?",
+    "options": [
+      "ho",
+      "jitensha",
+      "cho",
+      "ra"
+    ],
+    "answerIndex": 1,
+    "meaning": "xe đạp"
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'さかな' phiên âm là gì?",
+    "options": [
+      "sa",
+      "pa",
+      "ra",
+      "sakana"
+    ],
+    "answerIndex": 3,
+    "meaning": "cá"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ki'?",
+    "options": [
+      "き",
+      "め",
+      "の",
+      "よ"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'za'?",
+    "options": [
+      "ぼ",
+      "ぎ",
+      "ず",
+      "ざ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'ryo'?",
+    "options": [
+      "ぴょ",
+      "む",
+      "りょ",
+      "せ"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'え' phiên âm là gì?",
+    "options": [
+      "se",
+      "wa",
+      "e",
+      "sa"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'nyo'?",
+    "options": [
+      "に",
+      "よ",
+      "にょ",
+      "う"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'o'?",
+    "options": [
+      "か",
+      "た",
+      "お",
+      "も"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'hi'?",
+    "options": [
+      "ひ",
+      "ん",
+      "ろ",
+      "と"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'そ' phiên âm là gì?",
+    "options": [
+      "so",
+      "re",
+      "mo",
+      "n"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'べ' phiên âm là gì?",
+    "options": [
+      "be",
+      "ha",
+      "ku",
+      "no"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'na'?",
+    "options": [
+      "な",
+      "と",
+      "よ",
+      "き"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'ふ' phiên âm là gì?",
+    "options": [
+      "fu",
+      "u",
+      "re",
+      "ne"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'みせ' phiên âm là gì?",
+    "options": [
+      "shi",
+      "mise",
+      "gi",
+      "pe"
+    ],
+    "answerIndex": 1,
+    "meaning": "cửa hàng"
+  },
+  {
+    "category": "Âm đục",
+    "question": "'じ' phiên âm là gì?",
+    "options": [
+      "no",
+      "gi",
+      "ge",
+      "ji"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'tomodachi'?",
+    "options": [
+      "こ",
+      "ともだち",
+      "る",
+      "や"
+    ],
+    "answerIndex": 1,
+    "meaning": "bạn bè"
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'でんしゃ' phiên âm là gì?",
+    "options": [
+      "u",
+      "densha",
+      "zu2",
+      "shi"
+    ],
+    "answerIndex": 1,
+    "meaning": "tàu điện"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'to'?",
+    "options": [
+      "な",
+      "い",
+      "も",
+      "と"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'ひょ' phiên âm là gì?",
+    "options": [
+      "hya",
+      "sho",
+      "hyo",
+      "hyu"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ni'?",
+    "options": [
+      "け",
+      "あ",
+      "に",
+      "ひ"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'densha'?",
+    "options": [
+      "ひゃ",
+      "ぴょ",
+      "でんしゃ",
+      "きゅ"
+    ],
+    "answerIndex": 2,
+    "meaning": "tàu điện"
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'りんご' phiên âm là gì?",
+    "options": [
+      "ji2",
+      "pe",
+      "ringo",
+      "kyo"
+    ],
+    "answerIndex": 2,
+    "meaning": "quả táo"
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'みゃ' phiên âm là gì?",
+    "options": [
+      "chi",
+      "ma",
+      "nya",
+      "mya"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'ぢ' phiên âm là gì?",
+    "options": [
+      "ma",
+      "ha",
+      "ji2",
+      "ze"
+    ],
+    "answerIndex": 2,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'る' phiên âm là gì?",
+    "options": [
+      "wo",
+      "i",
+      "ke",
+      "ru"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'shi'?",
+    "options": [
+      "め",
+      "し",
+      "に",
+      "く"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'da'?",
+    "options": [
+      "ざ",
+      "づ",
+      "の",
+      "だ"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'do'?",
+    "options": [
+      "ん",
+      "ぬ",
+      "つ",
+      "ど"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'i'?",
+    "options": [
+      "ふ",
+      "い",
+      "さ",
+      "へ"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'myo'?",
+    "options": [
+      "みょ",
+      "つ",
+      "し",
+      "は"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "Chữ nào là 'ringo'?",
+    "options": [
+      "お",
+      "びゅ",
+      "び",
+      "りんご"
+    ],
+    "answerIndex": 3,
+    "meaning": "quả táo"
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "'の' phiên âm là gì?",
+    "options": [
+      "no",
+      "me",
+      "ke",
+      "te"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'ぎゅ' phiên âm là gì?",
+    "options": [
+      "gyu",
+      "ryo",
+      "mi",
+      "nyo"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'te'?",
+    "options": [
+      "て",
+      "や",
+      "ゆ",
+      "い"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "Chữ nào là 'zu2'?",
+    "options": [
+      "ぞ",
+      "づ",
+      "ぎ",
+      "り"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Từ vựng",
+    "question": "'やま' phiên âm là gì?",
+    "options": [
+      "de",
+      "ru",
+      "yama",
+      "hi"
+    ],
+    "answerIndex": 2,
+    "meaning": "núi"
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'ぴょ' phiên âm là gì?",
+    "options": [
+      "ko",
+      "pyo",
+      "ro",
+      "shu"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'ぶ' phiên âm là gì?",
+    "options": [
+      "ru",
+      "ra",
+      "su",
+      "bu"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "'ちょ' phiên âm là gì?",
+    "options": [
+      "ho",
+      "cho",
+      "pya",
+      "fu"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ne'?",
+    "options": [
+      "し",
+      "ふ",
+      "ゆ",
+      "ね"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  },
+  {
+    "category": "Âm ghép",
+    "question": "Chữ nào là 'hyo'?",
+    "options": [
+      "ひょ",
+      "ん",
+      "す",
+      "わ"
+    ],
+    "answerIndex": 0,
+    "meaning": ""
+  },
+  {
+    "category": "Bảng chữ cơ bản",
+    "question": "Chữ nào là 'ke'?",
+    "options": [
+      "ゆ",
+      "け",
+      "い",
+      "な"
+    ],
+    "answerIndex": 1,
+    "meaning": ""
+  },
+  {
+    "category": "Âm đục",
+    "question": "'ぞ' phiên âm là gì?",
+    "options": [
+      "de",
+      "za",
+      "me",
+      "zo"
+    ],
+    "answerIndex": 3,
+    "meaning": ""
+  }
+]

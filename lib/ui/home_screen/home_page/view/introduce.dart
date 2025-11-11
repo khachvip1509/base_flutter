@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/ui/quiz_screen/view/flash_card.dart';
 import 'package:untitled/utils/app_constants.dart';
 
 import '../../../hiragana/view/hiragana.dart';
@@ -89,14 +90,20 @@ class Introduce extends StatelessWidget {
                 onPress: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HiraganaListPage()),
+                    MaterialPageRoute(builder: (context) => HiraganaPage()),
                   );
                 },
               ),
-              const BasicItem(
+              BasicItem(
                 icon: Icons.book,
                 title: AppStrings.amDuc,
-                color: Color(0xFF6C84E0),
+                color: const Color(0xFF6C84E0),
+                onPress: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => FlashCardScreen()),
+                  );
+                },
               ),
               const BasicItem(
                 icon: Icons.menu_book,

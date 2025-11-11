@@ -4,6 +4,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:untitled/app_routers/screens.dart';
 import 'package:untitled/ui/home_screen/app_bar/view/app_bar.dart';
+import 'package:untitled/ui/home_screen/home_page/view/home_demo.dart';
 import 'package:untitled/ui/home_screen/home_page/view/home_screen.dart';
 import 'package:untitled/ui/login_screens/bloc/item_bloc.dart';
 import 'package:untitled/utils/app_constants.dart';
@@ -36,12 +37,6 @@ class MyApp extends StatelessWidget {
       getPages: AppRoutes.routes,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: Builder(
-        builder: (context) => Scaffold(
-          body: HomeScreen(),
-
-        ),
       ),
     );
   }
