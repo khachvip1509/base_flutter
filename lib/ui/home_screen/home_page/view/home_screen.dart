@@ -129,7 +129,7 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
         actions: [
           IconButton(
             onPressed: () => Scaffold.of(context).openEndDrawer(),
-            icon: const Icon(Icons.person),
+            icon: const Icon(Icons.person, size: AppNumbs.sizeAvt/1.5, color: Colors.white,),
           ),
         ],
       ),

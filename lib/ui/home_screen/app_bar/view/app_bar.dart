@@ -161,7 +161,7 @@ class AnimatedIconButton extends StatelessWidget {
         icon: AnimatedIcons.menu_close,
         progress: animation,
         color: Colors.white,
-        size: AppNumbs.sizeAvt,
+        size: AppNumbs.sizeAvt/1.5,
       ),
       tooltip: AppStrings.menu,
       onPressed: onPressed,
