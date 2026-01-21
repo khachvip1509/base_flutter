@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/ui/quiz_screen/view/quiz_screen.dart';
 import 'package:untitled/utils/app_constants.dart';
-import 'package:untitled/utils/carousel_view_custom/normal_layout_card.dart';
 
 import '../../../setting_screen/view/screen_screen.dart';
 import '../../app_bar/view/app_bar.dart';
@@ -92,7 +91,7 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
     const Center(child: Text(AppStrings.loTrinh)),
     const QuizScreen(),
     const Center(child: Text(AppStrings.nangCap)),
-    SettingsScreen()
+    SettingsScreen(),
   ];
 
   @override
@@ -129,7 +128,11 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
         actions: [
           IconButton(
             onPressed: () => Scaffold.of(context).openEndDrawer(),
-            icon: const Icon(Icons.person, size: AppNumbs.sizeAvt/1.5, color: Colors.white,),
+            icon: const Icon(
+              Icons.person,
+              size: AppNumbs.sizeAvt / 1.5,
+              color: Colors.white,
+            ),
           ),
         ],
       ),
@@ -270,7 +273,7 @@ class _NavigationDrawerExampleState extends State<NavigationDrawerExample>
   void didChangeDependencies() {
     super.didChangeDependencies();
     showNavigationDrawer = MediaQuery.of(context).size.width >= 450;
-    showNavigationDrawer =false;
+    showNavigationDrawer = false;
   }
 
   @override

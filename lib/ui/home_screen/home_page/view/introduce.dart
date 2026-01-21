@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:untitled/ui/quiz_screen/view/flash_card.dart';
 import 'package:untitled/utils/app_constants.dart';
 
+import '../../../../utils/carousel_view_custom/normal_layout_card.dart';
+import '../../../../utils/carousel_view_custom/uncontained_layout_card.dart';
 import '../../../hiragana/view/hiragana.dart';
 import 'basic_item_home.dart';
 
@@ -112,7 +114,120 @@ class Introduce extends StatelessWidget {
               ),
             ],
           ),
+          const SizedBox(height: 32),
 
+          // ---------------------
+          // PHẦN 3: Mỗi ngày 1 chữ Kanji
+          // ---------------------
+          const Text(
+            AppStrings.moiNgayMotTuKanji,
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Colors.black87,
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                colors: [Color(0xFFE8F0FF), Color(0xFFF3F6FF)],
+              ),
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: const [
+                      Text(
+                        "辺",
+                        style: TextStyle(
+                          fontSize: 36,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(height: 4),
+                      Text("BIÊN"),
+                      SizedBox(height: 4),
+                      Text("xung quanh, vùng lân cận"),
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 80,
+                  width: 80,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: const Center(
+                    child: Icon(Icons.brush, size: 36, color: Colors.blue),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 32),
+
+          // ---------------------
+          // PHẦN 4: Từ vựng theo Chủ Đề
+          // ---------------------
+          const Text(
+            AppStrings.tuVungTheoChuDe,
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Colors.black87,
+            ),
+          ),
+          NormalLayoutCard(),
+          const SizedBox(height: 32),
+
+          // ---------------------
+          // PHẦN 5: Từ vựng theo sách tiếng nhật
+          // ---------------------
+          const Text(
+            AppStrings.tuVungTheoSachTiengNhat,
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Colors.black87,
+            ),
+          ),
+          const SizedBox(height: 12),
+          UncontainedLayoutCard(items: AppStrings.books),
+          const SizedBox(height: 32),
+
+          // ---------------------
+          // PHẦN 6: Kanji
+          // ---------------------
+          const Text(
+            AppStrings.kanji,
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Colors.black87,
+            ),
+          ),
+          const SizedBox(height: 12),
+          UncontainedLayoutCard(items: AppStrings.kanjiTopic, offsetColor: 5),
+          const SizedBox(height: 32),
+          // ---------------------
+          // PHẦN 7: Kanji
+          // ---------------------
+          const Text(
+            AppStrings.kanji,
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Colors.black87,
+            ),
+          ),
+          const SizedBox(height: 12),
+          UncontainedLayoutCard(items: AppStrings.kanjiTopic, offsetColor: 10),
+          const SizedBox(height: 32),
           const SizedBox(height: 28),
         ],
       ),

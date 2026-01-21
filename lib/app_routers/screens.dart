@@ -1,20 +1,23 @@
-class Home{
+class Home {
   static const home = '/home';
 }
 
-class Login{
+class Login {
   static const login = '/login';
 }
 
-class Setting{
+class Setting {
   static const setting = '/setting';
 }
-class Profile{
+
+class Profile {
   static const profile = '/profile';
 }
-class Exam{
+
+class Exam {
   static const exam = '/exam';
 }
-class Quiz{
+
+class Quiz {
   static const quiz = '/quiz';
 }

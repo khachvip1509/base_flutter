@@ -1,10 +1,11 @@
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:rive/rive.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:untitled/utils/app_constants.dart';
 import 'package:untitled/utils/styles.dart';
 
@@ -123,7 +124,10 @@ class _FlashCardScreenState extends State<FlashCardScreen>
           return FadeTransition(
             opacity: animation,
             child: ScaleTransition(
-              scale: CurvedAnimation(parent: animation, curve: Curves.easeOutBack),
+              scale: CurvedAnimation(
+                parent: animation,
+                curve: Curves.easeOutBack,
+              ),
               child: child,
             ),
           );
@@ -150,7 +154,7 @@ class _FlashCardScreenState extends State<FlashCardScreen>
             icon: const Icon(Icons.quiz),
             onPressed: _openQuizScreen,
             tooltip: "Chế độ Quiz",
-          )
+          ),
         ],
       ),
       body: Column(
@@ -194,36 +198,36 @@ class _FlashCardScreenState extends State<FlashCardScreen>
                         ScaleTransition(scale: animation, child: child),
                     child: _isFront
                         ? Text(
-                      card['kana']!,
-                      key: const ValueKey(true),
-                      style: GoogleFonts.notoSansJavanese(
-                        fontSize: 100,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.indigoAccent,
-                      ),
-                    )
+                            card['kana']!,
+                            key: const ValueKey(true),
+                            style: GoogleFonts.notoSansJavanese(
+                              fontSize: 100,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.indigoAccent,
+                            ),
+                          )
                         : Column(
-                      key: const ValueKey(false),
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          card['romaji']!,
-                          style: GoogleFonts.poppins(
-                            fontSize: 26,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.deepOrange,
+                            key: const ValueKey(false),
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                card['romaji']!,
+                                style: GoogleFonts.poppins(
+                                  fontSize: 26,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.deepOrange,
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              Text(
+                                card['meaning']!,
+                                style: GoogleFonts.poppins(
+                                  fontSize: 16,
+                                  color: Colors.black54,
+                                ),
+                              ),
+                            ],
                           ),
-                        ),
-                        const SizedBox(height: 10),
-                        Text(
-                          card['meaning']!,
-                          style: GoogleFonts.poppins(
-                            fontSize: 16,
-                            color: Colors.black54,
-                          ),
-                        ),
-                      ],
-                    ),
                   ),
                 ),
               ),
@@ -234,16 +238,21 @@ class _FlashCardScreenState extends State<FlashCardScreen>
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               IconButton(
-                icon: const Icon(Icons.volume_up,
-                    size: 40, color: Colors.indigoAccent),
+                icon: const Icon(
+                  Icons.volume_up,
+                  size: 40,
+                  color: Colors.indigoAccent,
+                ),
                 onPressed: () => _speak(card['kana']!),
               ),
               ElevatedButton(
                 onPressed: _nextCard,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppColors.orangeFFD09D,
-                  padding:
-                  const EdgeInsets.symmetric(horizontal: 28, vertical: 14),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 28,
+                    vertical: 14,
+                  ),
                 ),
                 child: const Text("Tiếp theo", style: normalStyle),
               ),

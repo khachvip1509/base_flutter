@@ -34,7 +34,7 @@ class HomeScreen2 extends StatelessWidget {
             onPressed: () {
               Get.toNamed('/settings');
             },
-          )
+          ),
         ],
       ),
       body: ListView(

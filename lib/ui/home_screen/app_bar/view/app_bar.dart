@@ -92,7 +92,6 @@ class _MenuLeadingState extends State<MenuLeading>
                           if (e['label'] == AppStrings.luyenTap) {
                             Get.toNamed(Home.home);
                           }
-
                         },
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
@@ -161,7 +160,7 @@ class AnimatedIconButton extends StatelessWidget {
         icon: AnimatedIcons.menu_close,
         progress: animation,
         color: Colors.white,
-        size: AppNumbs.sizeAvt/1.5,
+        size: AppNumbs.sizeAvt / 1.5,
       ),
       tooltip: AppStrings.menu,
       onPressed: onPressed,

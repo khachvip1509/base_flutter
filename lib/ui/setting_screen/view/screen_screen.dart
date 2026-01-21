@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 import '../../../app_routers/screens.dart';
 
@@ -20,7 +19,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Setting', style: TextStyle(fontSize: 20)), // "Settings" in Japanese
+        title: const Text(
+          'Setting',
+          style: TextStyle(fontSize: 20),
+        ), // "Settings" in Japanese
       ),
       body: ListView(
         children: [
@@ -87,7 +89,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
             RadioListTile<String>(
               title: const Text('Tiếng Anh'),
-            value: 'Tiếng Anh',
+              value: 'Tiếng Anh',
               groupValue: selectedLanguage,
               onChanged: (value) {
                 setState(() {
@@ -116,7 +118,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
             child: const Text('Logout'), // Logout
             onPressed: () {
               Get.offAllNamed(Home.home);
-
             },
           ),
         ],

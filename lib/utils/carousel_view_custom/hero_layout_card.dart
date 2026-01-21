@@ -1,5 +1,7 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
+
 import 'image_info.dart';
 
 class HeroLayoutCard extends StatefulWidget {
@@ -26,7 +28,8 @@ class _HeroLayoutCardState extends State<HeroLayoutCard>
       viewportFraction: 0.75,
       initialPage: 1000 * ImageInformation.values.length,
     );
-    _currentIndex = _pageController.initialPage % ImageInformation.values.length;
+    _currentIndex =
+        _pageController.initialPage % ImageInformation.values.length;
 
     // Auto-play
     _timer = Timer.periodic(const Duration(seconds: 3), (_) {
@@ -43,11 +46,9 @@ class _HeroLayoutCardState extends State<HeroLayoutCard>
       duration: const Duration(milliseconds: 800),
     )..repeat(reverse: true);
 
-    _bounceAnimation =
-        Tween<double>(begin: 1.0, end: 1.05).animate(CurvedAnimation(
-          parent: _bounceController,
-          curve: Curves.easeInOut,
-        ));
+    _bounceAnimation = Tween<double>(begin: 1.0, end: 1.05).animate(
+      CurvedAnimation(parent: _bounceController, curve: Curves.easeInOut),
+    );
   }
 
   @override
@@ -85,7 +86,7 @@ class _HeroLayoutCardState extends State<HeroLayoutCard>
                     value =
                         ((_pageController.page ?? _pageController.initialPage)
                             .toDouble()) -
-                            index;
+                        index;
                     value = (1 - (value.abs() * 0.3)).clamp(0.0, 1.0);
                   }
 
@@ -108,7 +109,9 @@ class _HeroLayoutCardState extends State<HeroLayoutCard>
                     child: Transform(
                       alignment: Alignment.center,
                       transform: Matrix4.identity()
-                        ..translate(parallaxOffset * (i < _currentIndex ? -1 : 1))
+                        ..translate(
+                          parallaxOffset * (i < _currentIndex ? -1 : 1),
+                        )
                         ..rotateY(rotationY),
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -124,7 +127,9 @@ class _HeroLayoutCardState extends State<HeroLayoutCard>
                                   borderRadius: BorderRadius.circular(16),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: Colors.black.withOpacity(shadowOpacity),
+                                      color: Colors.black.withOpacity(
+                                        shadowOpacity,
+                                      ),
                                       blurRadius: shadowBlur,
                                       offset: const Offset(0, 6),
                                     ),
@@ -155,7 +160,8 @@ class _HeroLayoutCardState extends State<HeroLayoutCard>
                                 child: Container(
                                   decoration: BoxDecoration(
                                     borderRadius: const BorderRadius.vertical(
-                                        bottom: Radius.circular(16)),
+                                      bottom: Radius.circular(16),
+                                    ),
                                     gradient: LinearGradient(
                                       begin: Alignment.topCenter,
                                       end: Alignment.bottomCenter,
@@ -168,10 +174,13 @@ class _HeroLayoutCardState extends State<HeroLayoutCard>
                                   padding: const EdgeInsets.all(12.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       AnimatedDefaultTextStyle(
-                                        duration: const Duration(milliseconds: 300),
+                                        duration: const Duration(
+                                          milliseconds: 300,
+                                        ),
                                         curve: Curves.easeInOut,
                                         style: TextStyle(
                                           color: Colors.white,
@@ -189,7 +198,9 @@ class _HeroLayoutCardState extends State<HeroLayoutCard>
                                       ),
                                       const SizedBox(height: 4),
                                       AnimatedDefaultTextStyle(
-                                        duration: const Duration(milliseconds: 300),
+                                        duration: const Duration(
+                                          milliseconds: 300,
+                                        ),
                                         curve: Curves.easeInOut,
                                         style: TextStyle(
                                           color: Colors.white,
@@ -225,7 +236,7 @@ class _HeroLayoutCardState extends State<HeroLayoutCard>
           mainAxisAlignment: MainAxisAlignment.center,
           children: List.generate(
             ImageInformation.values.length,
-                (index) => Container(
+            (index) => Container(
               width: 8,
               height: 8,
               margin: const EdgeInsets.symmetric(horizontal: 4),

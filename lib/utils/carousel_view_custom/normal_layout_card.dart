@@ -13,7 +13,7 @@ class NormalLayoutCard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
       child: ConstrainedBox(
-        constraints: BoxConstraints(maxHeight: height / 8),
+        constraints: BoxConstraints(maxHeight: height / 12),
         child: CarouselView.weighted(
           flexWeights: const <int>[3, 3, 3, 2, 1],
           consumeMaxWeight: false,
