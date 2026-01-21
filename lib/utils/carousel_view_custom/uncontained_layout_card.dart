@@ -5,11 +5,15 @@ class UncontainedLayoutCard extends StatefulWidget {
   final int offsetColor;
   final void Function()? onUserScroll;
 
+  /// 👉 CALLBACK CLICK ITEM
+  final void Function(int index, String title)? onItemTap;
+
   const UncontainedLayoutCard({
     super.key,
     required this.items,
     this.offsetColor = 0,
     this.onUserScroll,
+    this.onItemTap,
   });
 
   @override
@@ -21,12 +25,12 @@ class UncontainedLayoutCardState extends State<UncontainedLayoutCard> {
   int _currentIndex = 0;
   bool _isResetting = false;
 
-  static const double _viewportFraction = 0.3;
-
   @override
   void initState() {
     super.initState();
-    _controller = PageController(viewportFraction: _viewportFraction);
+    _controller = PageController(
+      viewportFraction: 0.45, // ✅ item ngắn
+    );
   }
 
   @override
@@ -35,7 +39,7 @@ class UncontainedLayoutCardState extends State<UncontainedLayoutCard> {
     super.dispose();
   }
 
-  /// 🔥 GIỮ NGUYÊN – RESET VỀ ITEM ĐẦU
+  /// 🔥 RESET VỀ ITEM ĐẦU
   void resetToStart() {
     if (!mounted || _currentIndex == 0 || !_controller.hasClients) return;
 
@@ -61,9 +65,6 @@ class UncontainedLayoutCardState extends State<UncontainedLayoutCard> {
 
   @override
   Widget build(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-    final cardWidth = screenWidth * _viewportFraction - 12; // 🔥 CHỐT
-
     return SizedBox(
       height: 96,
       child: PageView.builder(
@@ -91,22 +92,24 @@ class UncontainedLayoutCardState extends State<UncontainedLayoutCard> {
                 child: child,
               );
             },
-            child: _buildCard(title, index, cardWidth),
+            child: _buildCard(title, index),
           );
         },
       ),
     );
   }
 
-  Widget _buildCard(String title, int index, double width) {
+  Widget _buildCard(String title, int index) {
     final isActive = index == _currentIndex;
 
-    return SizedBox(
-      width: width, // 🔥 KHÔNG BAO GIỜ DÀI NỮA
+    return GestureDetector(
+      onTap: () {
+        widget.onItemTap?.call(index, title);
+      },
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 250),
         margin: EdgeInsets.only(
-          right: 8, // 🔥 KHOẢNG CÁCH GIỮA ITEM
+          right: 8,
           top: isActive ? 6 : 14,
           bottom: isActive ? 6 : 14,
         ),
@@ -133,7 +136,7 @@ class UncontainedLayoutCardState extends State<UncontainedLayoutCard> {
               overflow: TextOverflow.ellipsis,
               textAlign: TextAlign.center,
               style: const TextStyle(
-                fontSize: 16,
+                fontSize: 15,
                 fontWeight: FontWeight.w600,
                 color: Colors.white,
                 height: 1.25,

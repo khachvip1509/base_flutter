@@ -227,6 +227,12 @@ class _IntroduceState extends State<Introduce> {
             key: _booksKey,
             items: AppStrings.books,
             onUserScroll: () => _onAnyCarouselScroll(_booksKey),
+            onItemTap: (index,title){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FlashCardScreen()),
+              );
+            },
           ),
 
           const SizedBox(height: 32),
@@ -248,6 +254,12 @@ class _IntroduceState extends State<Introduce> {
             items: AppStrings.kanjiTopic,
             offsetColor: 5,
             onUserScroll: () => _onAnyCarouselScroll(_kanjiKey1),
+            onItemTap: (index,title){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FlashCardScreen()),
+              );
+            },
           ),
 
           const SizedBox(height: 32),
@@ -268,6 +280,12 @@ class _IntroduceState extends State<Introduce> {
             items: AppStrings.kanjiTopic,
             offsetColor: 10,
             onUserScroll: () => _onAnyCarouselScroll(_kanjiKey2),
+            onItemTap: (index,title){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FlashCardScreen()),
+              );
+            },
           ),
 
           const SizedBox(height: 32),
