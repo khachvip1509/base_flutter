@@ -65,8 +65,7 @@ class _IntroduceState extends State<Introduce> {
               color: Colors.black87,
             ),
           ),
-          const SizedBox(height: 12),
-
+          const SizedBox(height: 8),
           _ResponsiveGrid(
             crossAxisCount: crossAxisCount,
             children: const [
@@ -106,8 +105,7 @@ class _IntroduceState extends State<Introduce> {
               color: Colors.black87,
             ),
           ),
-          const SizedBox(height: 15),
-
+          const SizedBox(height: 8),
           _ResponsiveGrid(
             crossAxisCount: crossAxisCount,
             children: [
@@ -153,6 +151,7 @@ class _IntroduceState extends State<Introduce> {
               color: Colors.black87,
             ),
           ),
+          const SizedBox(height: 8),
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
@@ -222,7 +221,6 @@ class _IntroduceState extends State<Introduce> {
               color: Colors.black87,
             ),
           ),
-          const SizedBox(height: 12),
           UncontainedLayoutCard(
             key: _booksKey,
             items: AppStrings.books,
@@ -235,7 +233,7 @@ class _IntroduceState extends State<Introduce> {
             },
           ),
 
-          const SizedBox(height: 32),
+          const SizedBox(height: 16),
 
           // ---------------------
           // PHẦN 6: Kanji
@@ -248,7 +246,6 @@ class _IntroduceState extends State<Introduce> {
               color: Colors.black87,
             ),
           ),
-          const SizedBox(height: 12),
           UncontainedLayoutCard(
             key: _kanjiKey1,
             items: AppStrings.kanjiTopic,
@@ -262,7 +259,7 @@ class _IntroduceState extends State<Introduce> {
             },
           ),
 
-          const SizedBox(height: 32),
+          const SizedBox(height: 16),
           // ---------------------
           // PHẦN 7: Kanji
           // ---------------------
@@ -274,7 +271,6 @@ class _IntroduceState extends State<Introduce> {
               color: Colors.black87,
             ),
           ),
-          const SizedBox(height: 12),
           UncontainedLayoutCard(
             key: _kanjiKey2,
             items: AppStrings.kanjiTopic,
@@ -288,7 +284,7 @@ class _IntroduceState extends State<Introduce> {
             },
           ),
 
-          const SizedBox(height: 32),
+          const SizedBox(height: 16),
         ],
       ),
     );

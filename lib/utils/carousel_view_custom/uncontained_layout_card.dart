@@ -29,7 +29,7 @@ class UncontainedLayoutCardState extends State<UncontainedLayoutCard> {
   void initState() {
     super.initState();
     _controller = PageController(
-      viewportFraction: 0.45, // ✅ item ngắn
+      viewportFraction: 0.2, // ✅ item ngắn
     );
   }
 
@@ -46,15 +46,15 @@ class UncontainedLayoutCardState extends State<UncontainedLayoutCard> {
     _isResetting = true;
     _controller
         .animateToPage(
-      0,
-      duration: const Duration(milliseconds: 350),
-      curve: Curves.easeOutCubic,
-    )
+          0,
+          duration: const Duration(milliseconds: 350),
+          curve: Curves.easeOutCubic,
+        )
         .then((_) {
-      if (!mounted) return;
-      _isResetting = false;
-      setState(() => _currentIndex = 0);
-    });
+          if (!mounted) return;
+          _isResetting = false;
+          setState(() => _currentIndex = 0);
+        });
   }
 
   void _onPageChanged(int index) {
@@ -66,7 +66,7 @@ class UncontainedLayoutCardState extends State<UncontainedLayoutCard> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 96,
+      height: 110,
       child: PageView.builder(
         padEnds: false,
         controller: _controller,
@@ -78,13 +78,13 @@ class UncontainedLayoutCardState extends State<UncontainedLayoutCard> {
           return AnimatedBuilder(
             animation: _controller,
             builder: (context, child) {
-              double scale = 1.0;
+              double scale = 0.9;
 
-              if (_controller.position.haveDimensions) {
-                final page = _controller.page ?? _currentIndex.toDouble();
-                final distance = (page - index).abs();
-                scale = (1 - distance * 0.2).clamp(0.88, 1.0);
-              }
+              // if (_controller.position.haveDimensions) {
+              //   final page = _controller.page ?? _currentIndex.toDouble();
+              //   final distance = (page - index).abs();
+              //   scale = (1 - distance * 0.2).clamp(0.88, 1.0);
+              // }
 
               return Transform.scale(
                 scale: scale,
@@ -108,11 +108,7 @@ class UncontainedLayoutCardState extends State<UncontainedLayoutCard> {
       },
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 250),
-        margin: EdgeInsets.only(
-          right: 8,
-          top: isActive ? 6 : 14,
-          bottom: isActive ? 6 : 14,
-        ),
+        margin: EdgeInsets.only(right: 8, top: 14, bottom: 14),
         decoration: BoxDecoration(
           color: Colors
               .primaries[(index + widget.offsetColor) % Colors.primaries.length]

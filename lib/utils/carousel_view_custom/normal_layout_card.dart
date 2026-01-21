@@ -11,7 +11,7 @@ class NormalLayoutCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final double height = MediaQuery.sizeOf(context).height;
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 12),
       child: ConstrainedBox(
         constraints: BoxConstraints(maxHeight: height / 12),
         child: CarouselView.weighted(

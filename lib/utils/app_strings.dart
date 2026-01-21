@@ -50,11 +50,22 @@ class AppStrings {
     "Try N3",
     "Try N2",
     "Try N1",
+    "Try N3",
+    "Try N2",
+    "Try N1",
+    "Try N3",
+    "Try N2",
+    "Try N1",
   ];
 
   //phan6
   static const kanji = 'Kanji';
   static final List<String> kanjiTopic = const [
+    "Bộ thủ",
+    "Cơ bản",
+    "Nâng cao",
+    "Soumatome N3",
+    "Soumatome N2",
     "Bộ thủ",
     "Cơ bản",
     "Nâng cao",
