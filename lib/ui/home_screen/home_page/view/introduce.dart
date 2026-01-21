@@ -7,8 +7,34 @@ import '../../../../utils/carousel_view_custom/uncontained_layout_card.dart';
 import '../../../hiragana/view/hiragana.dart';
 import 'basic_item_home.dart';
 
-class Introduce extends StatelessWidget {
+class Introduce extends StatefulWidget {
   const Introduce({super.key});
+
+  @override
+  State<Introduce> createState() => _IntroduceState();
+}
+
+class _IntroduceState extends State<Introduce> {
+  final GlobalKey<UncontainedLayoutCardState> _booksKey =
+  GlobalKey<UncontainedLayoutCardState>();
+
+  final GlobalKey<UncontainedLayoutCardState> _kanjiKey1 =
+  GlobalKey<UncontainedLayoutCardState>();
+
+  final GlobalKey<UncontainedLayoutCardState> _kanjiKey2 =
+  GlobalKey<UncontainedLayoutCardState>();
+
+  void _onAnyCarouselScroll(GlobalKey activeKey) {
+    if (activeKey != _booksKey) {
+      _booksKey.currentState?.resetToStart();
+    }
+    if (activeKey != _kanjiKey1) {
+      _kanjiKey1.currentState?.resetToStart();
+    }
+    if (activeKey != _kanjiKey2) {
+      _kanjiKey2.currentState?.resetToStart();
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -197,7 +223,12 @@ class Introduce extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 12),
-          UncontainedLayoutCard(items: AppStrings.books),
+          UncontainedLayoutCard(
+            key: _booksKey,
+            items: AppStrings.books,
+            onUserScroll: () => _onAnyCarouselScroll(_booksKey),
+          ),
+
           const SizedBox(height: 32),
 
           // ---------------------
@@ -212,7 +243,13 @@ class Introduce extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 12),
-          UncontainedLayoutCard(items: AppStrings.kanjiTopic, offsetColor: 5),
+          UncontainedLayoutCard(
+            key: _kanjiKey1,
+            items: AppStrings.kanjiTopic,
+            offsetColor: 5,
+            onUserScroll: () => _onAnyCarouselScroll(_kanjiKey1),
+          ),
+
           const SizedBox(height: 32),
           // ---------------------
           // PHẦN 7: Kanji
@@ -226,9 +263,14 @@ class Introduce extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 12),
-          UncontainedLayoutCard(items: AppStrings.kanjiTopic, offsetColor: 10),
+          UncontainedLayoutCard(
+            key: _kanjiKey2,
+            items: AppStrings.kanjiTopic,
+            offsetColor: 10,
+            onUserScroll: () => _onAnyCarouselScroll(_kanjiKey2),
+          ),
+
           const SizedBox(height: 32),
-          const SizedBox(height: 28),
         ],
       ),
     );
